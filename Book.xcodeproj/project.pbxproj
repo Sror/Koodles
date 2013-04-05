@@ -10,6 +10,8 @@
 		5209B0AA170F319000F5D51E /* Title.m in Sources */ = {isa = PBXBuildFile; fileRef = 5209B0A9170F319000F5D51E /* Title.m */; };
 		5209B0B0170F499F00F5D51E /* pooh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5209B0AF170F499F00F5D51E /* pooh.jpg */; };
 		5209B0B4170F52DE00F5D51E /* title.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5209B0B3170F52DE00F5D51E /* title.jpg */; };
+		5209B0B7170F6A6E00F5D51E /* Page2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 5209B0B6170F6A6E00F5D51E /* Page2Controller.m */; };
+		5209B0BA170F70FF00F5D51E /* Page3Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 5209B0B9170F70FF00F5D51E /* Page3Controller.m */; };
 		520C1999170F218600F0E452 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520C1998170F218600F0E452 /* UIKit.framework */; };
 		520C199B170F218600F0E452 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520C199A170F218600F0E452 /* Foundation.framework */; };
 		520C199D170F218600F0E452 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520C199C170F218600F0E452 /* CoreGraphics.framework */; };
@@ -30,6 +32,10 @@
 		5209B0A9170F319000F5D51E /* Title.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Title.m; sourceTree = "<group>"; };
 		5209B0AF170F499F00F5D51E /* pooh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pooh.jpg; sourceTree = "<group>"; };
 		5209B0B3170F52DE00F5D51E /* title.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = title.jpg; sourceTree = "<group>"; };
+		5209B0B5170F6A6E00F5D51E /* Page2Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page2Controller.h; sourceTree = "<group>"; };
+		5209B0B6170F6A6E00F5D51E /* Page2Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page2Controller.m; sourceTree = "<group>"; };
+		5209B0B8170F70FF00F5D51E /* Page3Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page3Controller.h; sourceTree = "<group>"; };
+		5209B0B9170F70FF00F5D51E /* Page3Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page3Controller.m; sourceTree = "<group>"; };
 		520C1995170F218600F0E452 /* Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Book.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		520C1998170F218600F0E452 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		520C199A170F218600F0E452 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -114,6 +120,10 @@
 				520C19B6170F218700F0E452 /* ModelController.h */,
 				520C19B7170F218700F0E452 /* ModelController.m */,
 				520C19B9170F218700F0E452 /* MainStoryboard.storyboard */,
+				5209B0B8170F70FF00F5D51E /* Page3Controller.h */,
+				5209B0B9170F70FF00F5D51E /* Page3Controller.m */,
+				5209B0B5170F6A6E00F5D51E /* Page2Controller.h */,
+				5209B0B6170F6A6E00F5D51E /* Page2Controller.m */,
 				5209B0A8170F318F00F5D51E /* Title.h */,
 				5209B0A9170F319000F5D51E /* Title.m */,
 				5209B0AE170F498200F5D51E /* images */,
@@ -210,6 +220,8 @@
 				520C19B5170F218700F0E452 /* DataViewController.m in Sources */,
 				520C19B8170F218700F0E452 /* ModelController.m in Sources */,
 				5209B0AA170F319000F5D51E /* Title.m in Sources */,
+				5209B0B7170F6A6E00F5D51E /* Page2Controller.m in Sources */,
+				5209B0BA170F70FF00F5D51E /* Page3Controller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

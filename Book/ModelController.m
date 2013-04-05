@@ -10,6 +10,8 @@
 
 #import "DataViewController.h"
 
+#import "Page2Controller.h"
+
 /*
  A controller object that manages a simple model -- a collection of month names.
  
@@ -32,15 +34,21 @@
         // Create the data model.
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
         _pageData = [[dateFormatter monthSymbols] copy];
+        NSLog(@"%@", _pageData);
     }
     return self;
 }
 
-- (DataViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard
+- (UIViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard
 {   
     // Return the data view controller for the given index.
-    if (([self.pageData count] == 0) || (index >= [self.pageData count])) {
+    if (([self.pageData count] == 0)) {
         return nil;
+    }
+    else if (index >= [self.pageData count])
+    {
+        Page2Controller *p2 = [storyboard instantiateViewControllerWithIdentifier:@"Page2"];
+        return p2;
     }
     
     // Create a new view controller and pass suitable data.
@@ -77,7 +85,7 @@
     }
     
     index++;
-    if (index == [self.pageData count]) {
+    if (index == 20) {
         return nil;
     }
     return [self viewControllerAtIndex:index storyboard:viewController.storyboard];
