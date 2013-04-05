@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5209B0AA170F319000F5D51E /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = 5209B0A9170F319000F5D51E /* Home.m */; };
+		5209B0AA170F319000F5D51E /* Title.m in Sources */ = {isa = PBXBuildFile; fileRef = 5209B0A9170F319000F5D51E /* Title.m */; };
+		5209B0B0170F499F00F5D51E /* pooh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5209B0AF170F499F00F5D51E /* pooh.jpg */; };
+		5209B0B4170F52DE00F5D51E /* title.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5209B0B3170F52DE00F5D51E /* title.jpg */; };
 		520C1999170F218600F0E452 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520C1998170F218600F0E452 /* UIKit.framework */; };
 		520C199B170F218600F0E452 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520C199A170F218600F0E452 /* Foundation.framework */; };
 		520C199D170F218600F0E452 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520C199C170F218600F0E452 /* CoreGraphics.framework */; };
@@ -24,8 +26,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5209B0A8170F318F00F5D51E /* Home.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
-		5209B0A9170F319000F5D51E /* Home.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Home.m; sourceTree = "<group>"; };
+		5209B0A8170F318F00F5D51E /* Title.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Title.h; sourceTree = "<group>"; };
+		5209B0A9170F319000F5D51E /* Title.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Title.m; sourceTree = "<group>"; };
+		5209B0AF170F499F00F5D51E /* pooh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pooh.jpg; sourceTree = "<group>"; };
+		5209B0B3170F52DE00F5D51E /* title.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = title.jpg; sourceTree = "<group>"; };
 		520C1995170F218600F0E452 /* Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Book.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		520C1998170F218600F0E452 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		520C199A170F218600F0E452 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -62,6 +66,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5209B0AE170F498200F5D51E /* images */ = {
+			isa = PBXGroup;
+			children = (
+				5209B0B3170F52DE00F5D51E /* title.jpg */,
+				5209B0AF170F499F00F5D51E /* pooh.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		520C198C170F218600F0E452 = {
 			isa = PBXGroup;
 			children = (
@@ -101,8 +114,9 @@
 				520C19B6170F218700F0E452 /* ModelController.h */,
 				520C19B7170F218700F0E452 /* ModelController.m */,
 				520C19B9170F218700F0E452 /* MainStoryboard.storyboard */,
-				5209B0A8170F318F00F5D51E /* Home.h */,
-				5209B0A9170F319000F5D51E /* Home.m */,
+				5209B0A8170F318F00F5D51E /* Title.h */,
+				5209B0A9170F319000F5D51E /* Title.m */,
+				5209B0AE170F498200F5D51E /* images */,
 				520C199F170F218600F0E452 /* Supporting Files */,
 			);
 			path = Book;
@@ -178,6 +192,8 @@
 				520C19AD170F218600F0E452 /* Default@2x.png in Resources */,
 				520C19AF170F218700F0E452 /* Default-568h@2x.png in Resources */,
 				520C19BB170F218700F0E452 /* MainStoryboard.storyboard in Resources */,
+				5209B0B0170F499F00F5D51E /* pooh.jpg in Resources */,
+				5209B0B4170F52DE00F5D51E /* title.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,7 +209,7 @@
 				520C19B2170F218700F0E452 /* RootViewController.m in Sources */,
 				520C19B5170F218700F0E452 /* DataViewController.m in Sources */,
 				520C19B8170F218700F0E452 /* ModelController.m in Sources */,
-				5209B0AA170F319000F5D51E /* Home.m in Sources */,
+				5209B0AA170F319000F5D51E /* Title.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
