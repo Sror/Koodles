@@ -1,18 +1,18 @@
 //
-//  Page3Controller.m
+//  Page1Controller.m
 //  Book
 //
 //  Created by JRamos on 4/5/13.
 //  Copyright (c) 2013 JRamos. All rights reserved.
 //
 
-#import "Page3Controller.h"
+#import "Page1Controller.h"
 
-@interface Page3Controller ()
+@interface Page1Controller ()
 
 @end
 
-@implementation Page3Controller
+@implementation Page1Controller
 
 - (void)viewDidLoad
 {

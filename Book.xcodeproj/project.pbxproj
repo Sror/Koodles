@@ -25,6 +25,8 @@
 		520C19B5170F218700F0E452 /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 520C19B4170F218700F0E452 /* DataViewController.m */; };
 		520C19B8170F218700F0E452 /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 520C19B7170F218700F0E452 /* ModelController.m */; };
 		520C19BB170F218700F0E452 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520C19B9170F218700F0E452 /* MainStoryboard.storyboard */; };
+		529B22D6170F989300B48AB5 /* Page1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 529B22D5170F989300B48AB5 /* Page1Controller.m */; };
+		529B22D8170F9B1200B48AB5 /* storyby.png in Resources */ = {isa = PBXBuildFile; fileRef = 529B22D7170F9B1200B48AB5 /* storyby.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,9 @@
 		520C19B6170F218700F0E452 /* ModelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelController.h; sourceTree = "<group>"; };
 		520C19B7170F218700F0E452 /* ModelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelController.m; sourceTree = "<group>"; };
 		520C19BA170F218700F0E452 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		529B22D4170F989300B48AB5 /* Page1Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page1Controller.h; sourceTree = "<group>"; };
+		529B22D5170F989300B48AB5 /* Page1Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page1Controller.m; sourceTree = "<group>"; };
+		529B22D7170F9B1200B48AB5 /* storyby.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = storyby.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				5209B0B3170F52DE00F5D51E /* title.jpg */,
+				529B22D7170F9B1200B48AB5 /* storyby.png */,
 				5209B0AF170F499F00F5D51E /* pooh.jpg */,
 			);
 			path = images;
@@ -120,6 +126,8 @@
 				520C19B6170F218700F0E452 /* ModelController.h */,
 				520C19B7170F218700F0E452 /* ModelController.m */,
 				520C19B9170F218700F0E452 /* MainStoryboard.storyboard */,
+				529B22D4170F989300B48AB5 /* Page1Controller.h */,
+				529B22D5170F989300B48AB5 /* Page1Controller.m */,
 				5209B0B8170F70FF00F5D51E /* Page3Controller.h */,
 				5209B0B9170F70FF00F5D51E /* Page3Controller.m */,
 				5209B0B5170F6A6E00F5D51E /* Page2Controller.h */,
@@ -204,6 +212,7 @@
 				520C19BB170F218700F0E452 /* MainStoryboard.storyboard in Resources */,
 				5209B0B0170F499F00F5D51E /* pooh.jpg in Resources */,
 				5209B0B4170F52DE00F5D51E /* title.jpg in Resources */,
+				529B22D8170F9B1200B48AB5 /* storyby.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +231,7 @@
 				5209B0AA170F319000F5D51E /* Title.m in Sources */,
 				5209B0B7170F6A6E00F5D51E /* Page2Controller.m in Sources */,
 				5209B0BA170F70FF00F5D51E /* Page3Controller.m in Sources */,
+				529B22D6170F989300B48AB5 /* Page1Controller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

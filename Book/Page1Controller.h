@@ -1,5 +1,5 @@
 //
-//  Page2Controller.h
+//  Page1Controller.h
 //  Book
 //
 //  Created by JRamos on 4/5/13.
@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Page2Controller : UIViewController
+@interface Page1Controller : UIViewController
 
-@property (strong, nonatomic) id dataObject;
 @property (weak, nonatomic) IBOutlet UILabel *dataLabel;
+@property (strong, nonatomic) id dataObject;
 
 @end

@@ -10,4 +10,7 @@
 
 @interface Page3Controller : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *dataLabel;
+@property (strong, nonatomic) id dataObject;
+
 @end

@@ -7,10 +7,10 @@
 //
 
 #import "ModelController.h"
-
 #import "DataViewController.h"
-
 #import "Page2Controller.h"
+#import "Page3Controller.h"
+#import "Page1Controller.h"
 
 /*
  A controller object that manages a simple model -- a collection of month names.
@@ -26,6 +26,9 @@
 @end
 
 @implementation ModelController
+{
+    NSUInteger index;
+}
 
 - (id)init
 {
@@ -34,26 +37,40 @@
         // Create the data model.
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
         _pageData = [[dateFormatter monthSymbols] copy];
+        index = 0;
         NSLog(@"%@", _pageData);
     }
     return self;
 }
 
-- (UIViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard
+- (UIViewController *)viewControllerAtIndex:(NSUInteger)index2 storyboard:(UIStoryboard *)storyboard
 {   
     // Return the data view controller for the given index.
     if (([self.pageData count] == 0)) {
         return nil;
+        NSLog(@"viewControllerAtIndex = 0");
     }
-    else if (index >= [self.pageData count])
+    else if (index2 == 0)
+    {
+        Page1Controller *p1 = [storyboard instantiateViewControllerWithIdentifier:@"Page1"];
+        
+        return p1;
+    }
+    else if (index2 == 1)
     {
         Page2Controller *p2 = [storyboard instantiateViewControllerWithIdentifier:@"Page2"];
+        
         return p2;
+    }
+    else if (index2 == 2){
+        Page3Controller *p3 = [storyboard instantiateViewControllerWithIdentifier:@"Page3"];
+        return p3;
     }
     
     // Create a new view controller and pass suitable data.
     DataViewController *dataViewController = [storyboard instantiateViewControllerWithIdentifier:@"DataViewController"];
     dataViewController.dataObject = self.pageData[index];
+    NSLog(@"DataViewCointroller created");
     return dataViewController;
 }
 
@@ -68,27 +85,27 @@
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
 {
-    NSUInteger index = [self indexOfViewController:(DataViewController *)viewController];
+    NSLog(@"Index is: %d", index);
     if ((index == 0) || (index == NSNotFound)) {
         return nil;
     }
     
     index--;
+    NSLog(@"Index is NOW: %d", index);
     return [self viewControllerAtIndex:index storyboard:viewController.storyboard];
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
 {
-    NSUInteger index = [self indexOfViewController:(DataViewController *)viewController];
-    if (index == NSNotFound) {
+    NSLog(@"Index is: %d", index);
+    if ((index == 5) || (index == NSNotFound)) {
         return nil;
     }
     
     index++;
-    if (index == 20) {
-        return nil;
-    }
+    NSLog(@"Index is NOW: %d", index);
     return [self viewControllerAtIndex:index storyboard:viewController.storyboard];
+
 }
 
 @end

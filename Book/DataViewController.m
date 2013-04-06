@@ -18,6 +18,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    NSLog(@"Dataviewcontroller did load");
 }
 
 - (void)didReceiveMemoryWarning
@@ -30,6 +31,7 @@
 {
     [super viewWillAppear:animated];
     self.dataLabel.text = [self.dataObject description];
+    NSLog(@"DataViewController viewdidappear method did load");
 }
 
 @end
