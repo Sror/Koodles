@@ -29,7 +29,8 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.dataLabel.text = @"THIS IS A TTESSSSTTTT";
+    self.dataLabel.text = @"Koodles is always very happy and has a BIG bright smile.";
+    
 }
 
 @end

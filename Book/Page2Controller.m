@@ -30,7 +30,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-     self.dataLabel.text = @"ilugjygkjh";
+     self.dataLabel.text = @"Way out WEST lives the most adorable, friendly, chubby bear named Koodles.";
 }
 
 @end

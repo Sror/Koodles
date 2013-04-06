@@ -58,7 +58,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZI0-9z-bsj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5" y="642"/>
+            <point key="canvasLocation" x="-1809" y="-2762"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="4">
@@ -75,7 +75,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="13" y="-243"/>
+            <point key="canvasLocation" x="-1891" y="-2647"/>
         </scene>
         <!--Data View Controller-->
         <scene sceneID="7">
@@ -114,7 +114,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1132" y="-243"/>
+            <point key="canvasLocation" x="1532" y="677"/>
         </scene>
         <!--Page1 Controller-->
         <scene sceneID="6sk-jI-nAa">
@@ -142,7 +142,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rac-fb-zMt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1240" y="-1133"/>
+            <point key="canvasLocation" x="-592" y="-2663"/>
         </scene>
         <!--Page3 Controller-->
         <scene sceneID="zO6-Z6-oih">
@@ -152,35 +152,36 @@
                         <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="title.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="eKs-eK-rSC"/>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDb-2L-ZN8">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="page3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="eKs-eK-rSC"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="787" translatesAutoresizingMaskIntoConstraints="NO" id="gVC-9X-OwA">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="126" id="6aa-L0-rKf"/>
-                                    <constraint firstAttribute="width" constant="256" id="CJg-6m-JSD"/>
+                                    <constraint firstAttribute="height" constant="126" id="bXg-pX-FE6"/>
+                                    <constraint firstAttribute="width" constant="787" id="u1z-jN-fdk"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="45"/>
+                                <color key="textColor" red="0.92156869173049927" green="0.47058826684951782" blue="0.21960785984992981" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="eKs-eK-rSC" firstAttribute="top" secondItem="13B-FX-dqq" secondAttribute="top" type="default" id="c8O-3J-aTp"/>
                             <constraint firstItem="eKs-eK-rSC" firstAttribute="leading" secondItem="13B-FX-dqq" secondAttribute="leading" type="default" id="eVV-QV-RbR"/>
-                            <constraint firstItem="hDb-2L-ZN8" firstAttribute="top" secondItem="13B-FX-dqq" secondAttribute="top" constant="276" id="evc-lM-h4D"/>
+                            <constraint firstItem="gVC-9X-OwA" firstAttribute="top" secondItem="13B-FX-dqq" secondAttribute="top" constant="156" id="fbs-gi-dN8"/>
                             <constraint firstItem="eKs-eK-rSC" firstAttribute="bottom" secondItem="13B-FX-dqq" secondAttribute="bottom" type="default" id="hoB-jb-KND"/>
-                            <constraint firstItem="hDb-2L-ZN8" firstAttribute="leading" secondItem="13B-FX-dqq" secondAttribute="leading" constant="301" id="weB-me-kbn"/>
+                            <constraint firstItem="gVC-9X-OwA" firstAttribute="leading" secondItem="13B-FX-dqq" secondAttribute="leading" constant="88" id="ihH-gg-pVJ"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <outlet property="dataLabel" destination="hDb-2L-ZN8" id="9jc-dH-dd7"/>
+                        <outlet property="dataLabel" destination="gVC-9X-OwA" id="BUw-1g-6HV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bm6-kn-wLu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2390" y="-1133"/>
+            <point key="canvasLocation" x="1738" y="-2663"/>
         </scene>
         <!--Page2 Controller-->
         <scene sceneID="JLq-n8-D86">
@@ -190,28 +191,24 @@
                         <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="pooh.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8V9-Hn-tYD">
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="page2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8V9-Hn-tYD"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="984" translatesAutoresizingMaskIntoConstraints="NO" id="IyS-IH-PyT">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="761" id="JrN-1b-9W1"/>
-                                    <constraint firstAttribute="width" constant="1447" id="tAR-0j-2vJ"/>
+                                    <constraint firstAttribute="height" constant="126" id="wUN-Mn-467"/>
                                 </constraints>
-                            </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IyS-IH-PyT">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="299" id="0tS-eR-he2"/>
-                                    <constraint firstAttribute="height" constant="133" id="Qph-7Q-v7L"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="35"/>
+                                <color key="textColor" red="0.21960785984992981" green="0.92156869173049927" blue="0.90980398654937744" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="IyS-IH-PyT" firstAttribute="leading" secondItem="flG-YB-ZdH" secondAttribute="leading" constant="186" id="4gK-rm-Hsk"/>
-                            <constraint firstItem="8V9-Hn-tYD" firstAttribute="trailing" secondItem="flG-YB-ZdH" secondAttribute="trailing" type="default" id="Fsc-QU-tVM"/>
-                            <constraint firstItem="IyS-IH-PyT" firstAttribute="top" secondItem="flG-YB-ZdH" secondAttribute="top" constant="242" id="N2V-Lg-kfW"/>
-                            <constraint firstItem="8V9-Hn-tYD" firstAttribute="top" secondItem="flG-YB-ZdH" secondAttribute="top" constant="-20" id="kXl-lY-70x"/>
+                            <constraint firstAttribute="trailing" secondItem="IyS-IH-PyT" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="azo-KX-jVM"/>
+                            <constraint firstItem="8V9-Hn-tYD" firstAttribute="bottom" secondItem="flG-YB-ZdH" secondAttribute="bottom" type="default" id="fB3-1Y-tlW"/>
+                            <constraint firstItem="IyS-IH-PyT" firstAttribute="leading" secondItem="flG-YB-ZdH" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="hbN-BB-Qkw"/>
+                            <constraint firstItem="8V9-Hn-tYD" firstAttribute="leading" secondItem="flG-YB-ZdH" secondAttribute="leading" type="default" id="iiv-GP-isV"/>
+                            <constraint firstItem="8V9-Hn-tYD" firstAttribute="top" secondItem="flG-YB-ZdH" secondAttribute="top" type="default" id="o36-kM-0aY"/>
+                            <constraint firstItem="IyS-IH-PyT" firstAttribute="top" secondItem="flG-YB-ZdH" secondAttribute="top" type="default" id="tmM-c3-iJj"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
@@ -222,11 +219,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GqU-Kx-Rko" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2378" y="-250"/>
+            <point key="canvasLocation" x="578" y="-2663"/>
         </scene>
     </scenes>
     <resources>
-        <image name="pooh.jpg" width="1024" height="768"/>
+        <image name="page2.jpg" width="1024" height="768"/>
+        <image name="page3.jpg" width="1024" height="768"/>
         <image name="storyby.png" width="186" height="82"/>
         <image name="title.jpg" width="1024" height="768"/>
     </resources>
