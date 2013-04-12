@@ -1,19 +1,18 @@
 //
-//  Title.m
+//  Page4Controller.m
 //  Book
 //
-//  Created by JRamos on 4/5/13.
+//  Created by JRamos on 4/10/13.
 //  Copyright (c) 2013 JRamos. All rights reserved.
 //
 
-#import "Title.h"
-#import "RootViewController.h"
+#import "Page4Controller.h"
 
-@interface Title ()
+@interface Page4Controller ()
 
 @end
 
-@implementation Title
+@implementation Page4Controller
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -36,14 +35,11 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)Play:(UIButton *)sender {
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+   // self.dataLabel.text = @"Koodles is always very happy and has a BIG bright smile.";
     
-    
-//    RootViewController *pages = [[self storyboard] instantiateViewControllerWithIdentifier:@"Root"];
-//    [self presentViewController:pages animated:YES completion:^{
-//        NSLog(@"RootViewController did load");
-//    }];
-    
-   
 }
+
 @end

@@ -33,4 +33,7 @@
     
 }
 
+- (IBAction)goHome:(UIButton *)sender {
+        [self.navigationController popToRootViewControllerAnimated:YES];
+}
 @end

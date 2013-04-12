@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  Book
+//  Test
 //
-//  Created by JRamos on 4/5/13.
+//  Created by JRamos on 4/10/13.
 //  Copyright (c) 2013 JRamos. All rights reserved.
 //
 
@@ -24,7 +24,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
@@ -41,6 +41,14 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)setPageTurned:(BOOL)val{
+    pageTurned = val;
+}
+
+- (BOOL)getPageTurned{
+    return pageTurned;
 }
 
 @end

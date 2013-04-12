@@ -29,7 +29,10 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.dataLabel.text = @"THIS IS A TTESSSSTTTT";
+
 }
 
+- (IBAction)goHome:(UIButton *)sender {
+        [self.navigationController popToRootViewControllerAnimated:YES];
+}
 @end

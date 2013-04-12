@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface Page1Controller : UIViewController
+- (IBAction)goHome:(UIButton *)sender;
 
 @property (weak, nonatomic) IBOutlet UILabel *dataLabel;
 @property (strong, nonatomic) id dataObject;

@@ -8,9 +8,11 @@
 
 #import "ModelController.h"
 #import "DataViewController.h"
+#import "Page4Controller.h"
 #import "Page2Controller.h"
 #import "Page3Controller.h"
 #import "Page1Controller.h"
+#import "AppDelegate.h"
 
 /*
  A controller object that manages a simple model -- a collection of month names.
@@ -28,6 +30,8 @@
 @implementation ModelController
 {
     NSUInteger index;
+    BOOL pageForward;
+    BOOL pageBack;
 }
 
 - (id)init
@@ -39,6 +43,8 @@
         _pageData = [[dateFormatter monthSymbols] copy];
         index = 0;
         NSLog(@"%@", _pageData);
+        pageBack = NO;
+        pageForward = NO;
     }
     return self;
 }
@@ -47,8 +53,8 @@
 {   
     // Return the data view controller for the given index.
     if (([self.pageData count] == 0)) {
-        return nil;
         NSLog(@"viewControllerAtIndex = 0");
+        return nil;
     }
     else if (index2 == 0)
     {
@@ -65,6 +71,11 @@
     else if (index2 == 2){
         Page3Controller *p3 = [storyboard instantiateViewControllerWithIdentifier:@"Page3"];
         return p3;
+    }
+    
+    else if (index2 == 3){
+        Page4Controller *p4 = [storyboard instantiateViewControllerWithIdentifier:@"Page4"];
+        return p4;
     }
     
     // Create a new view controller and pass suitable data.
@@ -85,25 +96,61 @@
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
 {
-    NSLog(@"Index is: %d", index);
+    
+    AppDelegate* app = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    BOOL pageTurned = [app getPageTurned];
+    
+    if(pageForward){
+        if(!pageTurned){
+            index--;
+        }
+    }
+    pageForward = NO;
+    
+    if(pageBack){
+        if(!pageTurned){
+            index++;
+        }
+    }
+    
+    NSLog(@"Index Current: %d", index);
     if ((index == 0) || (index == NSNotFound)) {
         return nil;
     }
     
     index--;
-    NSLog(@"Index is NOW: %d", index);
+    NSLog(@"Index Next: %d", index);
+    pageBack = YES;
     return [self viewControllerAtIndex:index storyboard:viewController.storyboard];
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
 {
-    NSLog(@"Index is: %d", index);
+
+    AppDelegate* app = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    BOOL pageTurned = [app getPageTurned];
+    
+    if(pageBack){
+        if(!pageTurned){
+            index++;
+        }
+    }
+    pageBack = NO;
+    
+    if(pageForward){
+        if(!pageTurned){
+            index--;
+        }
+    }
+
+    NSLog(@"Index Current: %d", index);
     if ((index == 5) || (index == NSNotFound)) {
         return nil;
     }
     
     index++;
-    NSLog(@"Index is NOW: %d", index);
+    NSLog(@"Index Next: %d", index);
+    pageForward = YES;
     return [self viewControllerAtIndex:index storyboard:viewController.storyboard];
 
 }

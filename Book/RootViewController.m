@@ -13,6 +13,7 @@
 #import "DataViewController.h"
 
 #import "Title.h"
+#import "AppDelegate.h"
 
 @interface RootViewController ()
 @property (readonly, strong, nonatomic) ModelController *modelController;
@@ -65,12 +66,14 @@
 
 #pragma mark - UIPageViewController delegate methods
 
-/*
+
 - (void)pageViewController:(UIPageViewController *)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray *)previousViewControllers transitionCompleted:(BOOL)completed
 {
+    AppDelegate* app = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    [app setPageTurned:completed];
     
 }
- */
+
 
 - (UIPageViewControllerSpineLocation)pageViewController:(UIPageViewController *)pageViewController spineLocationForInterfaceOrientation:(UIInterfaceOrientation)orientation
 {

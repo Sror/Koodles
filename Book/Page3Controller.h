@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface Page3Controller : UIViewController
+- (IBAction)goHome:(UIButton *)sender;
 
 
 @property (strong, nonatomic) id dataObject;

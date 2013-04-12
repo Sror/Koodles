@@ -12,4 +12,6 @@
 
 @property (strong, nonatomic) UIPageViewController *pageViewController;
 
+@property (nonatomic) BOOL didFinish;
+
 @end

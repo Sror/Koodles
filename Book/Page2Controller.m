@@ -18,7 +18,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    NSLog(@"Page2Controller did load");
+    //NSLog(@"Page2Controller did load");
 }
 
 - (void)didReceiveMemoryWarning
@@ -33,5 +33,8 @@
      self.dataLabel.text = @"Way out WEST lives the most adorable, friendly, chubby bear named Koodles.";
 }
 
+- (IBAction)goHome:(UIButton *)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
 @end
 
