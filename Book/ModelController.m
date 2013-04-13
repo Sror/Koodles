@@ -8,6 +8,10 @@
 
 #import "ModelController.h"
 #import "DataViewController.h"
+#import "Page8Controller.h"
+#import "Page7Controller.h"
+#import "Page6Controller.h"
+#import "Page5Controller.h"
 #import "Page4Controller.h"
 #import "Page2Controller.h"
 #import "Page3Controller.h"
@@ -52,11 +56,8 @@
 - (UIViewController *)viewControllerAtIndex:(NSUInteger)index2 storyboard:(UIStoryboard *)storyboard
 {   
     // Return the data view controller for the given index.
-    if (([self.pageData count] == 0)) {
-        NSLog(@"viewControllerAtIndex = 0");
-        return nil;
-    }
-    else if (index2 == 0)
+
+    if (index2 == 0)
     {
         Page1Controller *p1 = [storyboard instantiateViewControllerWithIdentifier:@"Page1"];
         
@@ -77,12 +78,28 @@
         Page4Controller *p4 = [storyboard instantiateViewControllerWithIdentifier:@"Page4"];
         return p4;
     }
+    else if (index2 == 4){
+        Page5Controller *p5 = [storyboard instantiateViewControllerWithIdentifier:@"Page5"];
+        return p5;
+    }
+    else if (index2 == 5){
+        Page6Controller *p6 = [storyboard instantiateViewControllerWithIdentifier:@"Page6"];
+        return p6;
+    }
+    else if (index2 == 6){
+        Page7Controller *p7 = [storyboard instantiateViewControllerWithIdentifier:@"Page7"];
+        return p7;
+    }
+    else if (index2 == 7){
+        Page8Controller *p8 = [storyboard instantiateViewControllerWithIdentifier:@"Page8"];
+        return p8;
+    }
     
-    // Create a new view controller and pass suitable data.
-    DataViewController *dataViewController = [storyboard instantiateViewControllerWithIdentifier:@"DataViewController"];
-    dataViewController.dataObject = self.pageData[index];
-    NSLog(@"DataViewCointroller created");
-    return dataViewController;
+//    // Create a new view controller and pass suitable data.
+//    DataViewController *dataViewController = [storyboard instantiateViewControllerWithIdentifier:@"DataViewController"];
+//    dataViewController.dataObject = self.pageData[index];
+//    NSLog(@"DataViewCointroller created");
+    return nil;
 }
 
 - (NSUInteger)indexOfViewController:(DataViewController *)viewController
@@ -144,7 +161,7 @@
     }
 
     NSLog(@"Index Current: %d", index);
-    if ((index == 5) || (index == NSNotFound)) {
+    if ((index == 10) || (index == NSNotFound)) {
         return nil;
     }
     

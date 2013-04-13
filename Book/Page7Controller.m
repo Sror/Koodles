@@ -1,18 +1,18 @@
 //
-//  Page4Controller.m
+//  Page7Controller.m
 //  Book
 //
-//  Created by JRamos on 4/10/13.
+//  Created by JRamos on 4/12/13.
 //  Copyright (c) 2013 JRamos. All rights reserved.
 //
 
-#import "Page4Controller.h"
+#import "Page7Controller.h"
 
-@interface Page4Controller ()
+@interface Page7Controller ()
 
 @end
 
-@implementation Page4Controller
+@implementation Page7Controller
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -38,8 +38,9 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-   self.dataLabel.text = @"Koodles loves going to school. He loves to learn new things, play outside during recess, and make new friends!";
-    
+    self.dataLabel.text = @"Koodles really loves the beach. He enjoys the sand.";
+    self.dataLabel2.text = @"Koodles loves the ocean water and all the shells along the shore.";
 }
+
 
 @end
