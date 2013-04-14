@@ -237,7 +237,7 @@
                                     <constraint firstAttribute="width" constant="613" id="gl5-fY-gvq"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Papyrus-Condensed" family="Papyrus" pointSize="45"/>
-                                <color key="textColor" patternImage="85B98EA0-B031-4B04-ABEA-23F5426A0564" colorSpace="pattern"/>
+                                <color key="textColor" patternImage="66DA161F-7755-4B2C-BA92-8C16E6111077" colorSpace="pattern"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -259,6 +259,165 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ku8-SP-aya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-597" y="-1753"/>
+        </scene>
+        <!--Page9 Controller-->
+        <scene sceneID="MIY-jb-TR7">
+            <objects>
+                <viewController storyboardIdentifier="Page9" id="cxy-yB-277" customClass="Page9Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b7O-Om-v3z">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bck.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7aW-yB-aAD"/>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="moon.png" translatesAutoresizingMaskIntoConstraints="NO" id="W3Y-hz-h4s">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="292" id="izh-ld-7uw"/>
+                                    <constraint firstAttribute="height" constant="100" type="user" id="rNZ-xJ-lGt"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="cloudbig.png" translatesAutoresizingMaskIntoConstraints="NO" id="guV-S2-MEb">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="381" id="OyP-7z-J5t"/>
+                                    <constraint firstAttribute="height" constant="300" type="user" id="Ybq-Ib-8Oa"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="253" image="cloudmedium.png" translatesAutoresizingMaskIntoConstraints="NO" id="WVf-Xw-qI6">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="TDU-Wu-WGs"/>
+                                    <constraint firstAttribute="width" constant="207" type="user" id="VcF-bP-RCp"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="balloon1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zmq-Ru-mrg">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="Pcp-FZ-mcl"/>
+                                    <constraint firstAttribute="width" constant="188" id="tIC-jg-X1v"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="cloudbig.png" translatesAutoresizingMaskIntoConstraints="NO" id="ogW-FN-EdA">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="262" id="K2w-ee-C3g"/>
+                                    <constraint firstAttribute="height" constant="162" id="eeM-VB-nI9"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="grassy.png" translatesAutoresizingMaskIntoConstraints="NO" id="SDp-YJ-R5O">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="Zq7-1r-3mI"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="owl.png" translatesAutoresizingMaskIntoConstraints="NO" id="HQm-ro-e1t">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="209" id="3Px-fb-L79"/>
+                                    <constraint firstAttribute="width" constant="240" id="ZFS-2B-ok5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="He also loves to fall asleep so he can dream of tomorrow's adventures." lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="452" translatesAutoresizingMaskIntoConstraints="NO" id="ISo-ZB-ACo">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="364" id="VZn-Le-eGT"/>
+                                    <constraint firstAttribute="width" constant="452" id="Y9V-GE-RPy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="52"/>
+                                <color key="textColor" red="0.027450982481241226" green="0.93333339691162109" blue="0.95686280727386475" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="wall.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="kUU-sa-zSU">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="575" id="U4O-xF-Yci"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="floor.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ygw-jl-Qte">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="193" id="zOQ-K5-SKz"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="floorboard.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="MbL-hI-B4J">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="9aT-ym-v3A"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="bed.png" translatesAutoresizingMaskIntoConstraints="NO" id="aso-XZ-Cgl">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="402" id="Buy-Xp-QrX"/>
+                                    <constraint firstAttribute="width" constant="510" id="gqc-8H-1NB"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="window.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kw3-KC-aYy">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="545" id="8mz-9C-fmh"/>
+                                    <constraint firstAttribute="height" constant="334" id="zn1-tQ-6X8"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="z1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZOH-qf-19y">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="169" id="JgW-h9-cyH"/>
+                                    <constraint firstAttribute="width" constant="198" id="Shk-UF-Jar"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="furniture.png" translatesAutoresizingMaskIntoConstraints="NO" id="4CL-Rf-nfi">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="448" id="q2k-kE-evo"/>
+                                    <constraint firstAttribute="width" constant="493" id="zkh-c3-eI8"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4CL-Rf-nfi" firstAttribute="top" secondItem="b7O-Om-v3z" secondAttribute="top" constant="308" id="107-PS-AEa"/>
+                            <constraint firstItem="ogW-FN-EdA" firstAttribute="top" secondItem="b7O-Om-v3z" secondAttribute="top" type="default" id="42D-DN-Snk"/>
+                            <constraint firstItem="kUU-sa-zSU" firstAttribute="top" secondItem="b7O-Om-v3z" secondAttribute="top" type="default" id="6bu-Mf-5q9"/>
+                            <constraint firstAttribute="bottom" secondItem="HQm-ro-e1t" secondAttribute="bottom" constant="62" id="CKQ-ZH-Agb"/>
+                            <constraint firstItem="ygw-jl-Qte" firstAttribute="leading" secondItem="b7O-Om-v3z" secondAttribute="leading" type="default" id="DAm-5R-K2C"/>
+                            <constraint firstItem="7aW-yB-aAD" firstAttribute="bottom" secondItem="b7O-Om-v3z" secondAttribute="bottom" type="default" id="EUX-Bo-ZfX"/>
+                            <constraint firstItem="Kw3-KC-aYy" firstAttribute="top" secondItem="b7O-Om-v3z" secondAttribute="top" constant="11" id="FWo-dR-OsT"/>
+                            <constraint firstItem="SDp-YJ-R5O" firstAttribute="top" secondItem="MbL-hI-B4J" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Ffl-dC-gGe"/>
+                            <constraint firstItem="MbL-hI-B4J" firstAttribute="leading" secondItem="b7O-Om-v3z" secondAttribute="leading" type="default" id="Gor-XL-Idw"/>
+                            <constraint firstAttribute="trailing" secondItem="ISo-ZB-ACo" secondAttribute="trailing" constant="60" id="KuG-bd-QtU"/>
+                            <constraint firstItem="7aW-yB-aAD" firstAttribute="top" secondItem="b7O-Om-v3z" secondAttribute="top" type="default" id="M9S-Iv-Xps"/>
+                            <constraint firstItem="aso-XZ-Cgl" firstAttribute="top" secondItem="b7O-Om-v3z" secondAttribute="top" constant="336" id="N73-WZ-vp9"/>
+                            <constraint firstItem="Zmq-Ru-mrg" firstAttribute="top" secondItem="b7O-Om-v3z" secondAttribute="top" constant="700" id="OCg-mV-lFM"/>
+                            <constraint firstItem="ogW-FN-EdA" firstAttribute="leading" secondItem="b7O-Om-v3z" secondAttribute="leading" constant="1045" id="TdC-jv-yId"/>
+                            <constraint firstItem="W3Y-hz-h4s" firstAttribute="top" secondItem="b7O-Om-v3z" secondAttribute="top" constant="-7" id="Tk6-hp-wyJ"/>
+                            <constraint firstItem="Kw3-KC-aYy" firstAttribute="leading" secondItem="b7O-Om-v3z" secondAttribute="leading" constant="8" id="V3W-Z5-Vnn"/>
+                            <constraint firstItem="W3Y-hz-h4s" firstAttribute="leading" secondItem="b7O-Om-v3z" secondAttribute="leading" type="default" id="V79-pU-B01"/>
+                            <constraint firstItem="SDp-YJ-R5O" firstAttribute="leading" secondItem="b7O-Om-v3z" secondAttribute="leading" type="default" id="WAB-Cj-muk"/>
+                            <constraint firstItem="ZOH-qf-19y" firstAttribute="leading" secondItem="W3Y-hz-h4s" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="XBw-Su-Dag"/>
+                            <constraint firstItem="ISo-ZB-ACo" firstAttribute="top" secondItem="b7O-Om-v3z" secondAttribute="top" constant="215" id="bz3-BI-rKt"/>
+                            <constraint firstItem="7aW-yB-aAD" firstAttribute="leading" secondItem="b7O-Om-v3z" secondAttribute="leading" type="default" id="c3g-cb-9DR"/>
+                            <constraint firstItem="kUU-sa-zSU" firstAttribute="leading" secondItem="b7O-Om-v3z" secondAttribute="leading" type="default" id="d0v-0G-jZb"/>
+                            <constraint firstItem="ygw-jl-Qte" firstAttribute="top" secondItem="b7O-Om-v3z" secondAttribute="top" constant="564" id="i51-bQ-ZR4"/>
+                            <constraint firstItem="WVf-Xw-qI6" firstAttribute="top" secondItem="b7O-Om-v3z" secondAttribute="top" constant="120" id="iXx-Qa-Eye"/>
+                            <constraint firstItem="guV-S2-MEb" firstAttribute="leading" secondItem="b7O-Om-v3z" secondAttribute="leading" constant="-415" id="lRx-HB-4P4"/>
+                            <constraint firstItem="ZOH-qf-19y" firstAttribute="top" secondItem="b7O-Om-v3z" secondAttribute="top" constant="265" id="lpa-Vw-u0a"/>
+                            <constraint firstItem="4CL-Rf-nfi" firstAttribute="leading" secondItem="aso-XZ-Cgl" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="n1O-ho-YGb"/>
+                            <constraint firstItem="HQm-ro-e1t" firstAttribute="trailing" secondItem="b7O-Om-v3z" secondAttribute="trailing" type="default" id="p6f-E7-QLz"/>
+                            <constraint firstItem="Zmq-Ru-mrg" firstAttribute="leading" secondItem="b7O-Om-v3z" secondAttribute="leading" constant="500" id="pp9-19-sGh"/>
+                            <constraint firstItem="WVf-Xw-qI6" firstAttribute="leading" secondItem="b7O-Om-v3z" secondAttribute="leading" constant="-488" id="r8N-Wj-wXr"/>
+                            <constraint firstItem="aso-XZ-Cgl" firstAttribute="leading" secondItem="b7O-Om-v3z" secondAttribute="leading" constant="30" id="uuB-x7-35M"/>
+                            <constraint firstItem="SDp-YJ-R5O" firstAttribute="bottom" secondItem="b7O-Om-v3z" secondAttribute="bottom" type="default" id="w49-wQ-oth"/>
+                            <constraint firstItem="guV-S2-MEb" firstAttribute="top" secondItem="b7O-Om-v3z" secondAttribute="top" type="default" id="ztw-rN-WPI"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="balloon" destination="Zmq-Ru-mrg" id="c1a-TZ-Gdo"/>
+                        <outlet property="bed" destination="aso-XZ-Cgl" id="zbW-Zq-6kW"/>
+                        <outlet property="cloudBig" destination="guV-S2-MEb" id="CPG-3F-chv"/>
+                        <outlet property="cloudBig2" destination="ogW-FN-EdA" id="SyW-2j-NbO"/>
+                        <outlet property="cloudMedium" destination="WVf-Xw-qI6" id="U4t-bV-g6X"/>
+                        <outlet property="dataLabel" destination="ISo-ZB-ACo" id="ZMR-0F-0kk"/>
+                        <outlet property="floor" destination="ygw-jl-Qte" id="xt7-2z-fKC"/>
+                        <outlet property="floorBoard" destination="MbL-hI-B4J" id="Tr7-Ng-kON"/>
+                        <outlet property="furniture" destination="4CL-Rf-nfi" id="a9v-Xh-e3W"/>
+                        <outlet property="moon" destination="W3Y-hz-h4s" id="joL-qG-dVn"/>
+                        <outlet property="owl" destination="HQm-ro-e1t" id="mvn-f3-PGe"/>
+                        <outlet property="wall" destination="kUU-sa-zSU" id="Ssf-7Q-rFe"/>
+                        <outlet property="window" destination="Kw3-KC-aYy" id="KSz-sK-sDL"/>
+                        <outlet property="zImage" destination="ZOH-qf-19y" id="4N0-Gi-gAL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Txl-Wg-zpf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-597" y="-803"/>
         </scene>
         <!--Page3 Controller-->
         <scene sceneID="zO6-Z6-oih">
@@ -349,11 +508,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="Hpm-NV-mT5" secondAttribute="bottom" constant="13" id="7l0-gf-82j"/>
+                            <constraint firstItem="Hpm-NV-mT5" firstAttribute="bottom" secondItem="9Ss-VS-RD0" secondAttribute="bottom" type="default" id="G8G-UD-gpt"/>
                             <constraint firstAttribute="bottom" secondItem="EpC-nG-ocJ" secondAttribute="bottom" constant="93" id="GS7-Tb-QLI"/>
                             <constraint firstItem="472-Ei-DQa" firstAttribute="bottom" secondItem="9Ss-VS-RD0" secondAttribute="bottom" type="default" id="HEg-go-hRz"/>
                             <constraint firstItem="472-Ei-DQa" firstAttribute="top" secondItem="9Ss-VS-RD0" secondAttribute="top" type="default" id="Hcr-Z8-pZg"/>
-                            <constraint firstItem="Hpm-NV-mT5" firstAttribute="leading" secondItem="9Ss-VS-RD0" secondAttribute="leading" constant="133" id="LLO-J4-hfy"/>
+                            <constraint firstItem="Hpm-NV-mT5" firstAttribute="leading" secondItem="9Ss-VS-RD0" secondAttribute="leading" constant="128" id="fHl-HR-eiU"/>
                             <constraint firstItem="472-Ei-DQa" firstAttribute="leading" secondItem="9Ss-VS-RD0" secondAttribute="leading" type="default" id="hRb-4g-g26"/>
                             <constraint firstItem="EpC-nG-ocJ" firstAttribute="leading" secondItem="9Ss-VS-RD0" secondAttribute="leading" constant="28" id="nfw-yO-q4U"/>
                         </constraints>
@@ -467,7 +626,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="85B98EA0-B031-4B04-ABEA-23F5426A0564" width="256" height="256">
+        <image name="66DA161F-7755-4B2C-BA92-8C16E6111077" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -4856,16 +5015,30 @@ BAILAAQCEwAEAhYABAIbAAQCKgAEAi4ABAI1AAQCPQAEAkoABAJPAAQCUQAEAlMABAJYAAQCYAAEAmMA
 BAJoAAQCcAAEAnMABAKFAAQCiAAEAo0AAAAAAAAEAQAAAAAAAABCAAAAAAAAAAAAAAAAAAQCjw
 </mutableData>
         </image>
+        <image name="balloon1.png" width="313" height="235"/>
+        <image name="bck.jpg" width="1024" height="768"/>
         <image name="beach.jpg" width="1024" height="768"/>
+        <image name="bed.png" width="520" height="408"/>
+        <image name="cloudbig.png" width="261" height="142"/>
+        <image name="cloudmedium.png" width="236" height="177"/>
+        <image name="floor.jpg" width="1024" height="176"/>
+        <image name="floorboard.jpg" width="1024" height="43"/>
+        <image name="furniture.png" width="460" height="328"/>
+        <image name="grassy.png" width="1024" height="146"/>
         <image name="home.png" width="40" height="40"/>
         <image name="kitchen.jpg" width="1024" height="768"/>
+        <image name="moon.png" width="156" height="206"/>
         <image name="night.jpg" width="1024" height="768"/>
+        <image name="owl.png" width="244" height="217"/>
         <image name="page2.jpg" width="1024" height="768"/>
         <image name="page3.jpg" width="1024" height="768"/>
         <image name="school.jpg" width="1024" height="768"/>
         <image name="sports.jpg" width="1024" height="768"/>
         <image name="storyby.png" width="186" height="82"/>
         <image name="title.jpg" width="1024" height="768"/>
+        <image name="wall.jpg" width="1024" height="582"/>
+        <image name="window.png" width="518" height="361"/>
+        <image name="z1.png" width="117" height="158"/>
     </resources>
     <classes>
         <class className="NSLayoutConstraint" superclassName="NSObject">
@@ -4921,6 +5094,25 @@ BAJoAAQCcAAEAnMABAKFAAQCiAAEAo0AAAAAAAAEAQAAAAAAAABCAAAAAAAAAAAAAAAAAAQCjw
             <source key="sourceIdentifier" type="project" relativePath="./Classes/Page8Controller.h"/>
             <relationships>
                 <relationship kind="outlet" name="dataLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="Page9Controller" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Page9Controller.h"/>
+            <relationships>
+                <relationship kind="outlet" name="balloon" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="bed" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="cloudBig" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="cloudBig2" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="cloudMedium" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="dataLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="floor" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="floorBoard" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="furniture" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="moon" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="owl" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="wall" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="window" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="zImage" candidateClass="UIImageView"/>
             </relationships>
         </class>
         <class className="RootViewController" superclassName="UIViewController">

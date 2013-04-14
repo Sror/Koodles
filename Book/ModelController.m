@@ -8,6 +8,7 @@
 
 #import "ModelController.h"
 #import "DataViewController.h"
+#import "Page9Controller.h"
 #import "Page8Controller.h"
 #import "Page7Controller.h"
 #import "Page6Controller.h"
@@ -93,6 +94,10 @@
     else if (index2 == 7){
         Page8Controller *p8 = [storyboard instantiateViewControllerWithIdentifier:@"Page8"];
         return p8;
+    }
+    else if (index2 == 8){
+        Page9Controller *p9 = [storyboard instantiateViewControllerWithIdentifier:@"Page9"];
+        return p9;
     }
     
 //    // Create a new view controller and pass suitable data.
