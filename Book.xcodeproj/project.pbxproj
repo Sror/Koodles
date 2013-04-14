@@ -29,6 +29,19 @@
 		524AB189171A1E2000848C05 /* grassy.png in Resources */ = {isa = PBXBuildFile; fileRef = 524AB187171A1E2000848C05 /* grassy.png */; };
 		524AB18A171A1E2000848C05 /* owl.png in Resources */ = {isa = PBXBuildFile; fileRef = 524AB188171A1E2000848C05 /* owl.png */; };
 		524AB18C171A231900848C05 /* owl2.png in Resources */ = {isa = PBXBuildFile; fileRef = 524AB18B171A231900848C05 /* owl2.png */; };
+		524AB190171A338000848C05 /* page2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 524AB18E171A338000848C05 /* page2.wav */; };
+		524AB191171A338000848C05 /* title.wav in Resources */ = {isa = PBXBuildFile; fileRef = 524AB18F171A338000848C05 /* title.wav */; };
+		524AB193171A343200848C05 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 524AB192171A343200848C05 /* AudioToolbox.framework */; };
+		524AB19B171A3B0B00848C05 /* page3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 524AB194171A3B0B00848C05 /* page3.wav */; };
+		524AB19C171A3B0B00848C05 /* page4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 524AB195171A3B0B00848C05 /* page4.wav */; };
+		524AB19D171A3B0B00848C05 /* page5.wav in Resources */ = {isa = PBXBuildFile; fileRef = 524AB196171A3B0B00848C05 /* page5.wav */; };
+		524AB19E171A3B0B00848C05 /* page6.wav in Resources */ = {isa = PBXBuildFile; fileRef = 524AB197171A3B0B00848C05 /* page6.wav */; };
+		524AB19F171A3B0B00848C05 /* page7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 524AB198171A3B0B00848C05 /* page7.wav */; };
+		524AB1A0171A3B0B00848C05 /* page8.wav in Resources */ = {isa = PBXBuildFile; fileRef = 524AB199171A3B0B00848C05 /* page8.wav */; };
+		524AB1A1171A3B0B00848C05 /* page9.wav in Resources */ = {isa = PBXBuildFile; fileRef = 524AB19A171A3B0B00848C05 /* page9.wav */; };
+		524AB1A3171A412700848C05 /* crickets.wav in Resources */ = {isa = PBXBuildFile; fileRef = 524AB1A2171A412700848C05 /* crickets.wav */; };
+		524AB1AC171A452E00848C05 /* NibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 524AB1AA171A452C00848C05 /* NibViewController.m */; };
+		524AB1AD171A452E00848C05 /* NibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 524AB1AB171A452C00848C05 /* NibViewController.xib */; };
 		529B22D8170F9B1200B48AB5 /* storyby.png in Resources */ = {isa = PBXBuildFile; fileRef = 529B22D7170F9B1200B48AB5 /* storyby.png */; };
 		529B22DA170FA9AD00B48AB5 /* page2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 529B22D9170FA9AD00B48AB5 /* page2.jpg */; };
 		529B22DC170FAF0400B48AB5 /* page3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 529B22DB170FAF0400B48AB5 /* page3.jpg */; };
@@ -95,6 +108,20 @@
 		524AB187171A1E2000848C05 /* grassy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grassy.png; sourceTree = "<group>"; };
 		524AB188171A1E2000848C05 /* owl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = owl.png; sourceTree = "<group>"; };
 		524AB18B171A231900848C05 /* owl2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = owl2.png; sourceTree = "<group>"; };
+		524AB18E171A338000848C05 /* page2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = page2.wav; path = Book/sounds/page2.wav; sourceTree = "<group>"; };
+		524AB18F171A338000848C05 /* title.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = title.wav; path = Book/sounds/title.wav; sourceTree = "<group>"; };
+		524AB192171A343200848C05 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		524AB194171A3B0B00848C05 /* page3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = page3.wav; path = Book/sounds/page3.wav; sourceTree = "<group>"; };
+		524AB195171A3B0B00848C05 /* page4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = page4.wav; path = Book/sounds/page4.wav; sourceTree = "<group>"; };
+		524AB196171A3B0B00848C05 /* page5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = page5.wav; path = Book/sounds/page5.wav; sourceTree = "<group>"; };
+		524AB197171A3B0B00848C05 /* page6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = page6.wav; path = Book/sounds/page6.wav; sourceTree = "<group>"; };
+		524AB198171A3B0B00848C05 /* page7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = page7.wav; path = Book/sounds/page7.wav; sourceTree = "<group>"; };
+		524AB199171A3B0B00848C05 /* page8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = page8.wav; path = Book/sounds/page8.wav; sourceTree = "<group>"; };
+		524AB19A171A3B0B00848C05 /* page9.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = page9.wav; path = Book/sounds/page9.wav; sourceTree = "<group>"; };
+		524AB1A2171A412700848C05 /* crickets.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = crickets.wav; path = Book/sounds/crickets.wav; sourceTree = "<group>"; };
+		524AB1A9171A452B00848C05 /* NibViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NibViewController.h; sourceTree = "<group>"; };
+		524AB1AA171A452C00848C05 /* NibViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NibViewController.m; sourceTree = "<group>"; };
+		524AB1AB171A452C00848C05 /* NibViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NibViewController.xib; sourceTree = "<group>"; };
 		529B22D7170F9B1200B48AB5 /* storyby.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = storyby.png; sourceTree = "<group>"; };
 		529B22D9170FA9AD00B48AB5 /* page2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = page2.jpg; sourceTree = "<group>"; };
 		529B22DB170FAF0400B48AB5 /* page3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = page3.jpg; sourceTree = "<group>"; };
@@ -144,6 +171,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				524AB193171A343200848C05 /* AudioToolbox.framework in Frameworks */,
 				520C1999170F218600F0E452 /* UIKit.framework in Frameworks */,
 				520C199B170F218600F0E452 /* Foundation.framework in Frameworks */,
 				520C199D170F218600F0E452 /* CoreGraphics.framework in Frameworks */,
@@ -195,6 +223,9 @@
 		520C198C170F218600F0E452 = {
 			isa = PBXGroup;
 			children = (
+				524AB1A9171A452B00848C05 /* NibViewController.h */,
+				524AB1AA171A452C00848C05 /* NibViewController.m */,
+				524AB1AB171A452C00848C05 /* NibViewController.xib */,
 				520C199E170F218600F0E452 /* Book */,
 				520C1997170F218600F0E452 /* Frameworks */,
 				520C1996170F218600F0E452 /* Products */,
@@ -212,6 +243,7 @@
 		520C1997170F218600F0E452 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				524AB192171A343200848C05 /* AudioToolbox.framework */,
 				520C1998170F218600F0E452 /* UIKit.framework */,
 				520C199A170F218600F0E452 /* Foundation.framework */,
 				520C199C170F218600F0E452 /* CoreGraphics.framework */,
@@ -234,6 +266,7 @@
 				5209B0A8170F318F00F5D51E /* Title.h */,
 				5209B0A9170F319000F5D51E /* Title.m */,
 				529DC13917189CD8002207BD /* Pages */,
+				524AB18D171A337000848C05 /* sounds */,
 				5209B0AE170F498200F5D51E /* images */,
 				520C199F170F218600F0E452 /* Supporting Files */,
 			);
@@ -252,6 +285,24 @@
 				520C19AE170F218700F0E452 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		524AB18D171A337000848C05 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				524AB18E171A338000848C05 /* page2.wav */,
+				524AB194171A3B0B00848C05 /* page3.wav */,
+				524AB195171A3B0B00848C05 /* page4.wav */,
+				524AB196171A3B0B00848C05 /* page5.wav */,
+				524AB1A2171A412700848C05 /* crickets.wav */,
+				524AB197171A3B0B00848C05 /* page6.wav */,
+				524AB198171A3B0B00848C05 /* page7.wav */,
+				524AB199171A3B0B00848C05 /* page8.wav */,
+				524AB19A171A3B0B00848C05 /* page9.wav */,
+				524AB18F171A338000848C05 /* title.wav */,
+			);
+			name = sounds;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		529DC13917189CD8002207BD /* Pages */ = {
@@ -367,6 +418,17 @@
 				524AB189171A1E2000848C05 /* grassy.png in Resources */,
 				524AB18A171A1E2000848C05 /* owl.png in Resources */,
 				524AB18C171A231900848C05 /* owl2.png in Resources */,
+				524AB190171A338000848C05 /* page2.wav in Resources */,
+				524AB191171A338000848C05 /* title.wav in Resources */,
+				524AB19B171A3B0B00848C05 /* page3.wav in Resources */,
+				524AB19C171A3B0B00848C05 /* page4.wav in Resources */,
+				524AB19D171A3B0B00848C05 /* page5.wav in Resources */,
+				524AB19E171A3B0B00848C05 /* page6.wav in Resources */,
+				524AB19F171A3B0B00848C05 /* page7.wav in Resources */,
+				524AB1A0171A3B0B00848C05 /* page8.wav in Resources */,
+				524AB1A1171A3B0B00848C05 /* page9.wav in Resources */,
+				524AB1A3171A412700848C05 /* crickets.wav in Resources */,
+				524AB1AD171A452E00848C05 /* NibViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +454,7 @@
 				52F036A51719B25F008CCB99 /* Page7Controller.m in Sources */,
 				52F036A61719B25F008CCB99 /* Page8Controller.m in Sources */,
 				52F036AF1719B400008CCB99 /* Page9Controller.m in Sources */,
+				524AB1AC171A452E00848C05 /* NibViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

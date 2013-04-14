@@ -7,12 +7,31 @@
 //
 
 #import "Page3Controller.h"
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface Page3Controller ()
 
 @end
 
-@implementation Page3Controller
+@implementation Page3Controller{
+    NSString *soundPath;
+    SystemSoundID soundID;
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [self playSound];
+}
+
+-(void) playSound {
+    soundPath = [[NSBundle mainBundle] pathForResource:@"page3" ofType:@"wav"];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: soundPath], &soundID);
+    AudioServicesPlaySystemSound (soundID);
+    
+}
+
+- (void) viewWillDisappear:(BOOL)animated{
+    AudioServicesDisposeSystemSoundID(soundID);
+}
 
 - (void)viewDidLoad
 {

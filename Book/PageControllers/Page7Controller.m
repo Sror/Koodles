@@ -7,12 +7,31 @@
 //
 
 #import "Page7Controller.h"
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface Page7Controller ()
 
 @end
 
-@implementation Page7Controller
+@implementation Page7Controller{
+    NSString *soundPath;
+    SystemSoundID soundID;
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [self playSound];
+}
+
+-(void) playSound {
+    soundPath = [[NSBundle mainBundle] pathForResource:@"page7" ofType:@"wav"];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: soundPath], &soundID);
+    AudioServicesPlaySystemSound (soundID);
+    
+}
+
+- (void) viewWillDisappear:(BOOL)animated{
+    AudioServicesDisposeSystemSoundID(soundID);
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -39,7 +58,7 @@
 {
     [super viewWillAppear:animated];
     self.dataLabel.text = @"Koodles really loves the beach. He enjoys the sand.";
-    self.dataLabel2.text = @"Koodles loves the ocean water and all the shells along the shore.";
+    self.dataLabel2.text = @"He loves the ocean water and all the shells along the shore.";
 }
 
 

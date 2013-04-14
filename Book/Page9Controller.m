@@ -7,6 +7,7 @@
 //
 
 #import "Page9Controller.h"
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface Page9Controller ()
 
@@ -18,6 +19,30 @@
     NSArray *zAnimation;
     NSArray *balloonAnimation;
     NSArray *owlAnimation;
+    NSString *soundPath;
+    SystemSoundID soundID;
+    NSString *soundPath2;
+    SystemSoundID soundID2;
+}
+
+-(void) playSound {
+    soundPath = [[NSBundle mainBundle] pathForResource:@"page9" ofType:@"wav"];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: soundPath], &soundID);
+    AudioServicesPlaySystemSound (soundID);
+}
+
+-(void) playCrickets {
+    
+    soundPath2 = [[NSBundle mainBundle] pathForResource:@"crickets" ofType:@"wav"];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: soundPath2], &soundID2);
+    AudioServicesPlaySystemSound (soundID2);
+    
+}
+
+- (void) viewWillDisappear:(BOOL)animated{
+    AudioServicesDisposeSystemSoundID(soundID);
+    AudioServicesDisposeSystemSoundID(soundID2);
+
 }
 
 - (void)viewDidLoad
@@ -73,6 +98,18 @@
                                     repeats:YES];
     
     self.dataLabel.text = @"He also loves to fall asleep so he can dream of tomorrow's adventures.";
+    
+    [NSTimer scheduledTimerWithTimeInterval:6
+                                     target:self
+                                   selector:@selector(playSound)
+                                   userInfo:nil
+                                    repeats:NO];
+    
+    [NSTimer scheduledTimerWithTimeInterval:3
+                                     target:self
+                                   selector:@selector(playCrickets)
+                                   userInfo:nil
+                                    repeats:NO];
 
 }
 
