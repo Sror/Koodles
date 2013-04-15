@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Page2Controller : UIViewController
+@interface Page2Controller : UIViewController <UIGestureRecognizerDelegate>
+@property (weak, nonatomic) IBOutlet UIImageView *globe;
 - (IBAction)goHome:(UIButton *)sender;
 
 @property (strong, nonatomic) id dataObject;
 @property (weak, nonatomic) IBOutlet UILabel *dataLabel;
+
+-(void)addGestureRecognizer:(UIView *)img;
 
 @end

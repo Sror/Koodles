@@ -166,7 +166,7 @@
     }
 
     NSLog(@"Index Current: %d", index);
-    if ((index == 10) || (index == NSNotFound)) {
+    if ((index == 8) || (index == NSNotFound)) {
         return nil;
     }
     

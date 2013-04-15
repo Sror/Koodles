@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface Page9Controller : UIViewController
+- (IBAction)goHome:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UILabel *dataLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *owl;
 @property (weak, nonatomic) IBOutlet UIImageView *balloon;

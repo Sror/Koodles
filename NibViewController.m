@@ -7,6 +7,8 @@
 //
 
 #import "NibViewController.h"
+#import "RootViewController.h"
+#import "Title.h"
 
 @interface NibViewController ()
 

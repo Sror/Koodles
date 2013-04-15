@@ -42,6 +42,7 @@
 		524AB1A3171A412700848C05 /* crickets.wav in Resources */ = {isa = PBXBuildFile; fileRef = 524AB1A2171A412700848C05 /* crickets.wav */; };
 		524AB1AC171A452E00848C05 /* NibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 524AB1AA171A452C00848C05 /* NibViewController.m */; };
 		524AB1AD171A452E00848C05 /* NibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 524AB1AB171A452C00848C05 /* NibViewController.xib */; };
+		524AB1AF171B2E5200848C05 /* times.plist in Resources */ = {isa = PBXBuildFile; fileRef = 524AB1AE171B2E5100848C05 /* times.plist */; };
 		529B22D8170F9B1200B48AB5 /* storyby.png in Resources */ = {isa = PBXBuildFile; fileRef = 529B22D7170F9B1200B48AB5 /* storyby.png */; };
 		529B22DA170FA9AD00B48AB5 /* page2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 529B22D9170FA9AD00B48AB5 /* page2.jpg */; };
 		529B22DC170FAF0400B48AB5 /* page3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 529B22DB170FAF0400B48AB5 /* page3.jpg */; };
@@ -49,6 +50,13 @@
 		529DC13B1718F426002207BD /* kitchen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 529DC13A1718F426002207BD /* kitchen.jpg */; };
 		529DC1401719087F002207BD /* beach.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 529DC13F1719087F002207BD /* beach.jpg */; };
 		529DC1451719241F002207BD /* night.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 529DC1441719241F002207BD /* night.jpg */; };
+		52AF26E1171BA671000EC024 /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = 52AF26DF171BA671000EC024 /* about.png */; };
+		52AF26E2171BA671000EC024 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 52AF26E0171BA671000EC024 /* play.png */; };
+		52AF26E4171BA7CC000EC024 /* titlename.png in Resources */ = {isa = PBXBuildFile; fileRef = 52AF26E3171BA7CC000EC024 /* titlename.png */; };
+		52AF26E6171BB385000EC024 /* about2.png in Resources */ = {isa = PBXBuildFile; fileRef = 52AF26E5171BB385000EC024 /* about2.png */; };
+		52AF26E8171BBB78000EC024 /* globe.png in Resources */ = {isa = PBXBuildFile; fileRef = 52AF26E7171BBB78000EC024 /* globe.png */; };
+		52AF26EA171BBFBB000EC024 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52AF26E9171BBFBB000EC024 /* QuartzCore.framework */; };
+		52AF26EC171BC9B7000EC024 /* koodles.png in Resources */ = {isa = PBXBuildFile; fileRef = 52AF26EB171BC9B7000EC024 /* koodles.png */; };
 		52C98E7B17163D5200FC4DE2 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 52C98E7A17163D5200FC4DE2 /* home.png */; };
 		52C98E7D1716455800FC4DE2 /* school.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52C98E7C1716455800FC4DE2 /* school.jpg */; };
 		52F0369F1719B25F008CCB99 /* Page1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F036901719B25F008CCB99 /* Page1Controller.m */; };
@@ -119,9 +127,10 @@
 		524AB199171A3B0B00848C05 /* page8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = page8.wav; path = Book/sounds/page8.wav; sourceTree = "<group>"; };
 		524AB19A171A3B0B00848C05 /* page9.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = page9.wav; path = Book/sounds/page9.wav; sourceTree = "<group>"; };
 		524AB1A2171A412700848C05 /* crickets.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = crickets.wav; path = Book/sounds/crickets.wav; sourceTree = "<group>"; };
-		524AB1A9171A452B00848C05 /* NibViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NibViewController.h; sourceTree = "<group>"; };
-		524AB1AA171A452C00848C05 /* NibViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NibViewController.m; sourceTree = "<group>"; };
-		524AB1AB171A452C00848C05 /* NibViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NibViewController.xib; sourceTree = "<group>"; };
+		524AB1A9171A452B00848C05 /* NibViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NibViewController.h; path = ../NibViewController.h; sourceTree = "<group>"; };
+		524AB1AA171A452C00848C05 /* NibViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NibViewController.m; path = ../NibViewController.m; sourceTree = "<group>"; };
+		524AB1AB171A452C00848C05 /* NibViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NibViewController.xib; path = ../NibViewController.xib; sourceTree = "<group>"; };
+		524AB1AE171B2E5100848C05 /* times.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = times.plist; sourceTree = "<group>"; };
 		529B22D7170F9B1200B48AB5 /* storyby.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = storyby.png; sourceTree = "<group>"; };
 		529B22D9170FA9AD00B48AB5 /* page2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = page2.jpg; sourceTree = "<group>"; };
 		529B22DB170FAF0400B48AB5 /* page3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = page3.jpg; sourceTree = "<group>"; };
@@ -129,6 +138,13 @@
 		529DC13A1718F426002207BD /* kitchen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kitchen.jpg; sourceTree = "<group>"; };
 		529DC13F1719087F002207BD /* beach.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = beach.jpg; sourceTree = "<group>"; };
 		529DC1441719241F002207BD /* night.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = night.jpg; sourceTree = "<group>"; };
+		52AF26DF171BA671000EC024 /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about.png; sourceTree = "<group>"; };
+		52AF26E0171BA671000EC024 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		52AF26E3171BA7CC000EC024 /* titlename.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = titlename.png; sourceTree = "<group>"; };
+		52AF26E5171BB385000EC024 /* about2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about2.png; sourceTree = "<group>"; };
+		52AF26E7171BBB78000EC024 /* globe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = globe.png; sourceTree = "<group>"; };
+		52AF26E9171BBFBB000EC024 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		52AF26EB171BC9B7000EC024 /* koodles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = koodles.png; sourceTree = "<group>"; };
 		52C98E7A17163D5200FC4DE2 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		52C98E7C1716455800FC4DE2 /* school.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = school.jpg; sourceTree = "<group>"; };
 		52F0368F1719B25F008CCB99 /* Page1Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Page1Controller.h; path = PageControllers/Page1Controller.h; sourceTree = "<group>"; };
@@ -171,6 +187,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52AF26EA171BBFBB000EC024 /* QuartzCore.framework in Frameworks */,
 				524AB193171A343200848C05 /* AudioToolbox.framework in Frameworks */,
 				520C1999170F218600F0E452 /* UIKit.framework in Frameworks */,
 				520C199B170F218600F0E452 /* Foundation.framework in Frameworks */,
@@ -184,12 +201,18 @@
 		5209B0AE170F498200F5D51E /* images */ = {
 			isa = PBXGroup;
 			children = (
+				52AF26EB171BC9B7000EC024 /* koodles.png */,
+				52AF26E5171BB385000EC024 /* about2.png */,
 				5209B0B3170F52DE00F5D51E /* title.jpg */,
 				529B22D9170FA9AD00B48AB5 /* page2.jpg */,
+				52AF26E7171BBB78000EC024 /* globe.png */,
 				529DC13F1719087F002207BD /* beach.jpg */,
 				524AB187171A1E2000848C05 /* grassy.png */,
+				52AF26E3171BA7CC000EC024 /* titlename.png */,
 				524AB18B171A231900848C05 /* owl2.png */,
 				524AB188171A1E2000848C05 /* owl.png */,
+				52AF26DF171BA671000EC024 /* about.png */,
+				52AF26E0171BA671000EC024 /* play.png */,
 				524AB17F1719F69300848C05 /* cloudmedium.png */,
 				52F036BC1719D6EF008CCB99 /* window.png */,
 				52F036CA1719F108008CCB99 /* cloudbig.png */,
@@ -223,9 +246,6 @@
 		520C198C170F218600F0E452 = {
 			isa = PBXGroup;
 			children = (
-				524AB1A9171A452B00848C05 /* NibViewController.h */,
-				524AB1AA171A452C00848C05 /* NibViewController.m */,
-				524AB1AB171A452C00848C05 /* NibViewController.xib */,
 				520C199E170F218600F0E452 /* Book */,
 				520C1997170F218600F0E452 /* Frameworks */,
 				520C1996170F218600F0E452 /* Products */,
@@ -243,6 +263,7 @@
 		520C1997170F218600F0E452 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				52AF26E9171BBFBB000EC024 /* QuartzCore.framework */,
 				524AB192171A343200848C05 /* AudioToolbox.framework */,
 				520C1998170F218600F0E452 /* UIKit.framework */,
 				520C199A170F218600F0E452 /* Foundation.framework */,
@@ -277,6 +298,7 @@
 			isa = PBXGroup;
 			children = (
 				520C19A0170F218600F0E452 /* Book-Info.plist */,
+				524AB1AE171B2E5100848C05 /* times.plist */,
 				520C19A1170F218600F0E452 /* InfoPlist.strings */,
 				520C19A4170F218600F0E452 /* main.m */,
 				520C19A6170F218600F0E452 /* Book-Prefix.pch */,
@@ -308,6 +330,9 @@
 		529DC13917189CD8002207BD /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				524AB1AA171A452C00848C05 /* NibViewController.m */,
+				524AB1A9171A452B00848C05 /* NibViewController.h */,
+				524AB1AB171A452C00848C05 /* NibViewController.xib */,
 				52F0368F1719B25F008CCB99 /* Page1Controller.h */,
 				52F036901719B25F008CCB99 /* Page1Controller.m */,
 				52F036911719B25F008CCB99 /* Page2Controller.h */,
@@ -429,6 +454,13 @@
 				524AB1A1171A3B0B00848C05 /* page9.wav in Resources */,
 				524AB1A3171A412700848C05 /* crickets.wav in Resources */,
 				524AB1AD171A452E00848C05 /* NibViewController.xib in Resources */,
+				524AB1AF171B2E5200848C05 /* times.plist in Resources */,
+				52AF26E1171BA671000EC024 /* about.png in Resources */,
+				52AF26E2171BA671000EC024 /* play.png in Resources */,
+				52AF26E4171BA7CC000EC024 /* titlename.png in Resources */,
+				52AF26E6171BB385000EC024 /* about2.png in Resources */,
+				52AF26E8171BBB78000EC024 /* globe.png in Resources */,
+				52AF26EC171BC9B7000EC024 /* koodles.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

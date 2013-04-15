@@ -23,12 +23,16 @@
     SystemSoundID soundID;
     NSString *soundPath2;
     SystemSoundID soundID2;
+    NSMutableArray *timerArray;
+
 }
 
 -(void) playSound {
     soundPath = [[NSBundle mainBundle] pathForResource:@"page9" ofType:@"wav"];
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: soundPath], &soundID);
     AudioServicesPlaySystemSound (soundID);
+    [self setupTimers];
+
 }
 
 -(void) playCrickets {
@@ -42,6 +46,10 @@
 - (void) viewWillDisappear:(BOOL)animated{
     AudioServicesDisposeSystemSoundID(soundID);
     AudioServicesDisposeSystemSoundID(soundID2);
+    
+    for (NSTimer *timers in timerArray) {
+        [timers invalidate];
+    }
 
 }
 
@@ -72,6 +80,9 @@
                         [UIImage imageNamed:@"owl.png"],
                         [UIImage imageNamed:@"owl2.png"],
                         nil];
+    
+    
+    timerArray = [[NSMutableArray alloc] init];
 
     
    
@@ -91,27 +102,128 @@
     [self animateClouds];
     [self animateBalloon];
     
-    [NSTimer scheduledTimerWithTimeInterval:7
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:7
                                      target:self
                                    selector:@selector(animateOwl)
                                    userInfo:nil
                                     repeats:YES];
+    [timerArray addObject:timer];
     
-    self.dataLabel.text = @"He also loves to fall asleep so he can dream of tomorrow's adventures.";
+    NSMutableAttributedString *label = [[NSMutableAttributedString alloc] initWithString:@"He also loves to fall asleep so he can dream of tomorrow's adventures."];
     
-    [NSTimer scheduledTimerWithTimeInterval:6
+    NSInteger stringLength = [label length];
+    
+    //Sets font. Notice: NSMakeRange(startingIndex, lengthofChars)
+    UIFont *font = [UIFont fontWithName:@"Noteworthy-Light" size:52.0];
+    [label addAttribute:NSFontAttributeName value:font range:NSMakeRange(0, stringLength)];
+    
+    
+    self.dataLabel.attributedText = label;
+    
+    NSTimer *timer2 = [NSTimer scheduledTimerWithTimeInterval:6
                                      target:self
                                    selector:@selector(playSound)
                                    userInfo:nil
                                     repeats:NO];
+    [timerArray addObject:timer2];
     
-    [NSTimer scheduledTimerWithTimeInterval:3
+    NSTimer *timer3 = [NSTimer scheduledTimerWithTimeInterval:3
                                      target:self
                                    selector:@selector(playCrickets)
                                    userInfo:nil
                                     repeats:NO];
+    [timerArray addObject:timer3];
 
 }
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    NSMutableAttributedString *label = [[NSMutableAttributedString alloc] initWithString:@"He also loves to fall asleep so he can dream of tomorrow's adventures."];
+    
+    NSInteger stringLength = [label length];
+    
+    //Sets font. Notice: NSMakeRange(startingIndex, lengthofChars)
+    UIFont *font = [UIFont fontWithName:@"Noteworthy-Light" size:52.0];
+    [label addAttribute:NSFontAttributeName value:font range:NSMakeRange(0, stringLength)];
+    
+    
+    self.dataLabel.attributedText = label;
+}
+
+- (void)setupTimers{
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"times" ofType:@"plist"];
+    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+    NSDictionary *currentPage = [dict objectForKey:@"Page9"];
+    
+    //NSInteger dictCount = [currentPage count];
+    
+    //Iterate through plist and set timers up
+    NSUInteger count = 0;
+    for (NSDictionary *dicts in currentPage) {
+        NSString *convert = [NSString stringWithFormat:@"%d", count];
+        NSNumber *start = [[currentPage objectForKey:(convert)] objectForKey:@"start"];
+        double startT = [start doubleValue];
+        NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:startT
+                                                          target:self
+                                                        selector:@selector(setupWords:)
+                                                        userInfo:(convert)
+                                                         repeats:NO];
+        
+        count++;
+        [timerArray addObject:timer];
+        
+    }
+    
+    
+    [NSTimer scheduledTimerWithTimeInterval:6.2
+                                     target:self
+                                   selector:@selector(viewWillAppear:)
+                                   userInfo:nil
+                                    repeats:NO];
+    
+    
+}
+
+- (void)setupWords:(NSTimer*)sender{
+    
+    
+    //Sends all page information to highlight the word
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"times" ofType:@"plist"];
+    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+    NSDictionary *currentPage = [dict objectForKey:@"Page9"];
+    
+    NSString *convert = [NSString stringWithFormat:@"%@", sender.userInfo];
+    NSNumber *wordIndex = [[currentPage objectForKey:(convert)] objectForKey:@"index"];
+    NSNumber *wordLength = [[currentPage objectForKey:(convert)] objectForKey:@"length"];
+    
+    
+    [self highlightWords:wordIndex :wordLength];
+}
+
+- (void)highlightWords:(NSNumber *)index :(NSNumber *)length{
+    
+    int wordIndex = [index intValue];
+    int wordLength = [length intValue];
+    //Setup label
+    NSMutableAttributedString *label = [[NSMutableAttributedString alloc] initWithString:@"He also loves to fall asleep so he can dream of tomorrow's adventures."];
+    NSInteger stringLength = [label length];
+    
+    //Iterate through plist
+    //Sets font. Notice: NSMakeRange(startingIndex, lengthofChars)
+    UIFont *font = [UIFont fontWithName:@"Noteworthy-Light" size:52.0];
+    [label addAttribute:NSFontAttributeName value:font range:NSMakeRange(0, stringLength)];
+    
+    [label addAttribute:NSBackgroundColorAttributeName
+                  value:[UIColor colorWithRed:1 green:1 blue:.8 alpha:1]
+                  range:NSMakeRange(wordIndex, wordLength)];
+    
+    
+    self.dataLabel.attributedText = label;
+    
+}
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -340,4 +452,7 @@
 }
 
 
+- (IBAction)goHome:(UIButton *)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
 @end

@@ -19,7 +19,7 @@ SystemSoundID soundID;
 }
 
 - (void)viewDidAppear:(BOOL)animated{
-    [self playSound];
+    [self performSelector:@selector(playSound) withObject:nil afterDelay:.2];
 }
 
 -(void) playSound {

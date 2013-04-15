@@ -16,21 +16,29 @@
 @implementation Page7Controller{
     NSString *soundPath;
     SystemSoundID soundID;
+    NSMutableArray *timerArray;
+
 }
 
 - (void)viewDidAppear:(BOOL)animated{
-    [self playSound];
+    [self performSelector:@selector(playSound) withObject:nil afterDelay:.2];
 }
 
 -(void) playSound {
     soundPath = [[NSBundle mainBundle] pathForResource:@"page7" ofType:@"wav"];
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: soundPath], &soundID);
     AudioServicesPlaySystemSound (soundID);
+    [self setupTimers];
+
     
 }
 
 - (void) viewWillDisappear:(BOOL)animated{
     AudioServicesDisposeSystemSoundID(soundID);
+    
+    for (NSTimer *timers in timerArray) {
+        [timers invalidate];
+    }
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -46,6 +54,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    timerArray = [[NSMutableArray alloc] init];
+
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,9 +68,164 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.dataLabel.text = @"Koodles really loves the beach. He enjoys the sand.";
-    self.dataLabel2.text = @"He loves the ocean water and all the shells along the shore.";
+    
+    NSMutableAttributedString *label = [[NSMutableAttributedString alloc] initWithString:@"Koodles really loves the beach. He enjoys the sand."];
+    NSMutableAttributedString *label2 = [[NSMutableAttributedString alloc] initWithString:@"He loves the ocean water and all the shells along the shore."];
+    
+    NSInteger stringLength = [label length];
+    NSInteger stringLength2 = [label2 length];
+    
+    //Sets font. Notice: NSMakeRange(startingIndex, lengthofChars)
+    UIFont *font = [UIFont fontWithName:@"MarkerFelt-Thin" size:30.0];
+    [label addAttribute:NSFontAttributeName value:font range:NSMakeRange(0, stringLength)];
+    
+    UIFont *font2 = [UIFont fontWithName:@"MarkerFelt-Thin" size:30.0];
+    [label2 addAttribute:NSFontAttributeName value:font2 range:NSMakeRange(0, stringLength2)];
+    
+    
+    self.dataLabel.attributedText = label;
+    self.dataLabel2.attributedText = label2;
+}
+
+- (void)setupTimers{
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"times" ofType:@"plist"];
+    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+    NSDictionary *currentPage = [dict objectForKey:@"Page7"];
+    NSDictionary *currentPage2 = [dict objectForKey:@"Page7-2"];
+    
+    //NSInteger dictCount = [currentPage count];
+    
+    //Iterate through plist and set timers up
+    NSUInteger count = 0;
+    NSUInteger count2 = 0;
+    for (NSDictionary *dicts in currentPage) {
+        NSString *convert = [NSString stringWithFormat:@"%d", count];
+        NSNumber *start = [[currentPage objectForKey:(convert)] objectForKey:@"start"];
+        double startT = [start doubleValue];
+        NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:startT
+                                                          target:self
+                                                        selector:@selector(setupWords:)
+                                                        userInfo:(convert)
+                                                         repeats:NO];
+        
+        count++;
+        [timerArray addObject:timer];
+        
+    }
+    
+    for (NSDictionary *dicts in currentPage2) {
+        NSString *convert = [NSString stringWithFormat:@"%d", count2];
+        NSNumber *start = [[currentPage2 objectForKey:(convert)] objectForKey:@"start"];
+        double startT = [start doubleValue];
+        NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:startT
+                                                          target:self
+                                                        selector:@selector(setupWords2:)
+                                                        userInfo:(convert)
+                                                         repeats:NO];
+        
+        count2++;
+        [timerArray addObject:timer];
+        
+    }
+    
+    [NSTimer scheduledTimerWithTimeInterval:5.75
+                                     target:self
+                                   selector:@selector(viewWillAppear:)
+                                   userInfo:nil
+                                    repeats:NO];
+    
+    [NSTimer scheduledTimerWithTimeInterval:12.4
+                                     target:self
+                                   selector:@selector(viewWillAppear:)
+                                   userInfo:nil
+                                    repeats:NO];
+    
+    
+}
+
+- (void)setupWords:(NSTimer*)sender{
+    
+    
+    //Sends all page information to highlight the word
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"times" ofType:@"plist"];
+    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+    NSDictionary *currentPage = [dict objectForKey:@"Page7"];
+    
+    NSString *convert = [NSString stringWithFormat:@"%@", sender.userInfo];
+    NSNumber *wordIndex = [[currentPage objectForKey:(convert)] objectForKey:@"index"];
+    NSNumber *wordLength = [[currentPage objectForKey:(convert)] objectForKey:@"length"];
+    
+    
+    [self highlightWords:wordIndex :wordLength];
+}
+
+- (void)setupWords2:(NSTimer*)sender{
+    
+    
+    //Sends all page information to highlight the word
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"times" ofType:@"plist"];
+    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+    NSDictionary *currentPage = [dict objectForKey:@"Page7-2"];
+    
+    NSString *convert = [NSString stringWithFormat:@"%@", sender.userInfo];
+    NSNumber *wordIndex = [[currentPage objectForKey:(convert)] objectForKey:@"index"];
+    NSNumber *wordLength = [[currentPage objectForKey:(convert)] objectForKey:@"length"];
+    
+    
+    [self highlightWords2:wordIndex :wordLength];
+}
+
+- (void)highlightWords:(NSNumber *)index :(NSNumber *)length{
+    
+    int wordIndex = [index intValue];
+    int wordLength = [length intValue];
+    //Setup label
+    NSMutableAttributedString *label = [[NSMutableAttributedString alloc] initWithString:@"Koodles really loves the beach. He enjoys the sand."];
+    NSInteger stringLength = [label length];
+    
+    //Iterate through plist
+    //Sets font. Notice: NSMakeRange(startingIndex, lengthofChars)
+    UIFont *font = [UIFont fontWithName:@"MarkerFelt-Thin" size:30.0];
+    [label addAttribute:NSFontAttributeName value:font range:NSMakeRange(0, stringLength)];
+    
+
+    
+    [label addAttribute:NSBackgroundColorAttributeName
+                  value:[UIColor colorWithRed:1 green:1 blue:.8 alpha:1]
+                  range:NSMakeRange(wordIndex, wordLength)];
+    
+    
+    
+    self.dataLabel.attributedText = label;
+    
+}
+
+- (void)highlightWords2:(NSNumber *)index :(NSNumber *)length{
+    
+    int wordIndex = [index intValue];
+    int wordLength = [length intValue];
+    //Setup label
+    NSMutableAttributedString *label = [[NSMutableAttributedString alloc] initWithString:@"He loves the ocean water and all the shells along the shore."];
+    NSInteger stringLength = [label length];
+    
+    //Iterate through plist
+    //Sets font. Notice: NSMakeRange(startingIndex, lengthofChars)
+    
+    UIFont *font = [UIFont fontWithName:@"MarkerFelt-Thin" size:30.0];
+    [label addAttribute:NSFontAttributeName value:font range:NSMakeRange(0, stringLength)];
+    
+    
+    [label addAttribute:NSBackgroundColorAttributeName
+                   value:[UIColor colorWithRed:1 green:1 blue:.8 alpha:1]
+                   range:NSMakeRange(wordIndex, wordLength)];
+    
+
+    self.dataLabel2.attributedText = label;
+    
 }
 
 
+- (IBAction)goHome:(UIButton *)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
 @end
