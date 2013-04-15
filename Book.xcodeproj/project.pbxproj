@@ -54,7 +54,6 @@
 		52AF26E2171BA671000EC024 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 52AF26E0171BA671000EC024 /* play.png */; };
 		52AF26E4171BA7CC000EC024 /* titlename.png in Resources */ = {isa = PBXBuildFile; fileRef = 52AF26E3171BA7CC000EC024 /* titlename.png */; };
 		52AF26E6171BB385000EC024 /* about2.png in Resources */ = {isa = PBXBuildFile; fileRef = 52AF26E5171BB385000EC024 /* about2.png */; };
-		52AF26E8171BBB78000EC024 /* globe.png in Resources */ = {isa = PBXBuildFile; fileRef = 52AF26E7171BBB78000EC024 /* globe.png */; };
 		52AF26EA171BBFBB000EC024 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52AF26E9171BBFBB000EC024 /* QuartzCore.framework */; };
 		52AF26EC171BC9B7000EC024 /* koodles.png in Resources */ = {isa = PBXBuildFile; fileRef = 52AF26EB171BC9B7000EC024 /* koodles.png */; };
 		52C98E7B17163D5200FC4DE2 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 52C98E7A17163D5200FC4DE2 /* home.png */; };
@@ -142,7 +141,6 @@
 		52AF26E0171BA671000EC024 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		52AF26E3171BA7CC000EC024 /* titlename.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = titlename.png; sourceTree = "<group>"; };
 		52AF26E5171BB385000EC024 /* about2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about2.png; sourceTree = "<group>"; };
-		52AF26E7171BBB78000EC024 /* globe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = globe.png; sourceTree = "<group>"; };
 		52AF26E9171BBFBB000EC024 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		52AF26EB171BC9B7000EC024 /* koodles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = koodles.png; sourceTree = "<group>"; };
 		52C98E7A17163D5200FC4DE2 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
@@ -205,7 +203,6 @@
 				52AF26E5171BB385000EC024 /* about2.png */,
 				5209B0B3170F52DE00F5D51E /* title.jpg */,
 				529B22D9170FA9AD00B48AB5 /* page2.jpg */,
-				52AF26E7171BBB78000EC024 /* globe.png */,
 				529DC13F1719087F002207BD /* beach.jpg */,
 				524AB187171A1E2000848C05 /* grassy.png */,
 				52AF26E3171BA7CC000EC024 /* titlename.png */,
@@ -459,7 +456,6 @@
 				52AF26E2171BA671000EC024 /* play.png in Resources */,
 				52AF26E4171BA7CC000EC024 /* titlename.png in Resources */,
 				52AF26E6171BB385000EC024 /* about2.png in Resources */,
-				52AF26E8171BBB78000EC024 /* globe.png in Resources */,
 				52AF26EC171BC9B7000EC024 /* koodles.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

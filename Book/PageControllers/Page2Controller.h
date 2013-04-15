@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface Page2Controller : UIViewController <UIGestureRecognizerDelegate>
-@property (weak, nonatomic) IBOutlet UIImageView *globe;
 - (IBAction)goHome:(UIButton *)sender;
 
 @property (strong, nonatomic) id dataObject;

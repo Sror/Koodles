@@ -324,7 +324,7 @@
                                     <constraint firstAttribute="width" constant="613" id="gl5-fY-gvq"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Papyrus-Condensed" family="Papyrus" pointSize="45"/>
-                                <color key="textColor" patternImage="6E2A8C9F-113C-4998-8521-9BF434E563E3" colorSpace="pattern"/>
+                                <color key="textColor" patternImage="3D220AC4-4330-4DF0-9BED-A954DC2F377A" colorSpace="pattern"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -699,18 +699,10 @@
                                     <action selector="goHome:" destination="U8s-Ej-17D" eventType="touchUpInside" id="lBU-tF-rGb"/>
                                 </connections>
                             </button>
-                            <imageView contentMode="center" image="globe.png" translatesAutoresizingMaskIntoConstraints="NO" id="Khd-zm-w9W">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="564" id="HkC-gA-tyq"/>
-                                    <constraint firstAttribute="width" constant="749" id="TG9-WL-WMn"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Khd-zm-w9W" firstAttribute="leading" secondItem="flG-YB-ZdH" secondAttribute="leading" constant="133" id="SN0-2f-q8F"/>
                             <constraint firstAttribute="trailing" secondItem="IyS-IH-PyT" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="azo-KX-jVM"/>
-                            <constraint firstItem="Khd-zm-w9W" firstAttribute="top" secondItem="flG-YB-ZdH" secondAttribute="top" constant="128" id="cNa-xt-Yej"/>
                             <constraint firstItem="8V9-Hn-tYD" firstAttribute="bottom" secondItem="flG-YB-ZdH" secondAttribute="bottom" type="default" id="fB3-1Y-tlW"/>
                             <constraint firstItem="IyS-IH-PyT" firstAttribute="leading" secondItem="flG-YB-ZdH" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="hbN-BB-Qkw"/>
                             <constraint firstItem="8V9-Hn-tYD" firstAttribute="leading" secondItem="flG-YB-ZdH" secondAttribute="leading" type="default" id="iiv-GP-isV"/>
@@ -724,7 +716,6 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="dataLabel" destination="IyS-IH-PyT" id="eVh-e5-UNQ"/>
-                        <outlet property="globe" destination="Khd-zm-w9W" id="7FK-dR-kH3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GqU-Kx-Rko" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -794,7 +785,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="6E2A8C9F-113C-4998-8521-9BF434E563E3" width="256" height="256">
+        <image name="3D220AC4-4330-4DF0-9BED-A954DC2F377A" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -5193,7 +5184,6 @@ BAJoAAQCcAAEAnMABAKFAAQCiAAEAo0AAAAAAAAEAQAAAAAAAABCAAAAAAAAAAAAAAAAAAQCjw
         <image name="floor.jpg" width="1024" height="176"/>
         <image name="floorboard.jpg" width="1024" height="43"/>
         <image name="furniture.png" width="460" height="328"/>
-        <image name="globe.png" width="740" height="576"/>
         <image name="grassy.png" width="1024" height="146"/>
         <image name="home.png" width="40" height="40"/>
         <image name="kitchen.jpg" width="1024" height="768"/>
