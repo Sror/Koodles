@@ -11,6 +11,7 @@
 @class DataViewController;
 
 @interface ModelController : NSObject <UIPageViewControllerDataSource>
+@property (nonatomic) NSUInteger *globalIndex;
 
 - (DataViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard;
 - (NSUInteger)indexOfViewController:(DataViewController *)viewController;

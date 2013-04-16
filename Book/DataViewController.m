@@ -1,12 +1,13 @@
 //
 //  DataViewController.m
-//  Book
+//  Test
 //
-//  Created by JRamos on 4/5/13.
+//  Created by JRamos on 4/10/13.
 //  Copyright (c) 2013 JRamos. All rights reserved.
 //
 
 #import "DataViewController.h"
+#import "AppDelegate.h"
 
 @interface DataViewController ()
 
@@ -18,7 +19,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    NSLog(@"Dataviewcontroller did load");
 }
 
 - (void)didReceiveMemoryWarning
@@ -31,7 +31,9 @@
 {
     [super viewWillAppear:animated];
     self.dataLabel.text = [self.dataObject description];
-    NSLog(@"DataViewController viewdidappear method did load");
+    AppDelegate* app = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    [app setValue:50];
+
 }
 
 @end

@@ -43,11 +43,15 @@
 {
     self = [super init];
     if (self) {
-        // Create the data model.
-        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-        _pageData = [[dateFormatter monthSymbols] copy];
-        index = 0;
-        NSLog(@"%@", _pageData);
+        //get bookmarked page
+        AppDelegate* app = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+        NSUInteger bookPage = [app getBookmarkedPage];
+        NSLog(@"bookPage is: %d", bookPage);
+        
+        index = bookPage;
+        
+        NSLog(@"index is now: %d", index);
+        
         pageBack = NO;
         pageForward = NO;
     }
@@ -143,6 +147,7 @@
     index--;
     NSLog(@"Index Next: %d", index);
     pageBack = YES;
+    [app setBookmarkedPage:index];
     return [self viewControllerAtIndex:index storyboard:viewController.storyboard];
 }
 
@@ -173,6 +178,7 @@
     index++;
     NSLog(@"Index Next: %d", index);
     pageForward = YES;
+    [app setBookmarkedPage:index];
     return [self viewControllerAtIndex:index storyboard:viewController.storyboard];
 
 }

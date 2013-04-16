@@ -20,7 +20,6 @@
 		520C19AD170F218600F0E452 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 520C19AC170F218600F0E452 /* Default@2x.png */; };
 		520C19AF170F218700F0E452 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 520C19AE170F218700F0E452 /* Default-568h@2x.png */; };
 		520C19B2170F218700F0E452 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 520C19B1170F218700F0E452 /* RootViewController.m */; };
-		520C19B5170F218700F0E452 /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 520C19B4170F218700F0E452 /* DataViewController.m */; };
 		520C19B8170F218700F0E452 /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 520C19B7170F218700F0E452 /* ModelController.m */; };
 		520C19BB170F218700F0E452 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520C19B9170F218700F0E452 /* MainStoryboard.storyboard */; };
 		524AB1801719F69300848C05 /* cloudmedium.png in Resources */ = {isa = PBXBuildFile; fileRef = 524AB17F1719F69300848C05 /* cloudmedium.png */; };
@@ -106,8 +105,6 @@
 		520C19AE170F218700F0E452 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		520C19B0170F218700F0E452 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		520C19B1170F218700F0E452 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		520C19B3170F218700F0E452 /* DataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
-		520C19B4170F218700F0E452 /* DataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
 		520C19B6170F218700F0E452 /* ModelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelController.h; sourceTree = "<group>"; };
 		520C19B7170F218700F0E452 /* ModelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelController.m; sourceTree = "<group>"; };
 		520C19BA170F218700F0E452 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
@@ -134,6 +131,8 @@
 		524AB1AE171B2E5100848C05 /* times.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = times.plist; sourceTree = "<group>"; };
 		52659D34171DA1FB00FE361E /* icon72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon72.png; path = ../icon72.png; sourceTree = "<group>"; };
 		52659D36171DA20100FE361E /* icon144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon144.png; path = ../icon144.png; sourceTree = "<group>"; };
+		52659D38171DABE100FE361E /* DataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
+		52659D39171DABE100FE361E /* DataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
 		529B22D7170F9B1200B48AB5 /* storyby.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = storyby.png; sourceTree = "<group>"; };
 		529B22D9170FA9AD00B48AB5 /* page2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = page2.jpg; sourceTree = "<group>"; };
 		529B22DB170FAF0400B48AB5 /* page3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = page3.jpg; sourceTree = "<group>"; };
@@ -278,10 +277,10 @@
 			children = (
 				520C19A7170F218600F0E452 /* AppDelegate.h */,
 				520C19A8170F218600F0E452 /* AppDelegate.m */,
+				52659D38171DABE100FE361E /* DataViewController.h */,
+				52659D39171DABE100FE361E /* DataViewController.m */,
 				520C19B0170F218700F0E452 /* RootViewController.h */,
 				520C19B1170F218700F0E452 /* RootViewController.m */,
-				520C19B3170F218700F0E452 /* DataViewController.h */,
-				520C19B4170F218700F0E452 /* DataViewController.m */,
 				520C19B6170F218700F0E452 /* ModelController.h */,
 				520C19B7170F218700F0E452 /* ModelController.m */,
 				520C19B9170F218700F0E452 /* MainStoryboard.storyboard */,
@@ -478,7 +477,6 @@
 				520C19A5170F218600F0E452 /* main.m in Sources */,
 				520C19A9170F218600F0E452 /* AppDelegate.m in Sources */,
 				520C19B2170F218700F0E452 /* RootViewController.m in Sources */,
-				520C19B5170F218700F0E452 /* DataViewController.m in Sources */,
 				520C19B8170F218700F0E452 /* ModelController.m in Sources */,
 				5209B0AA170F319000F5D51E /* Title.m in Sources */,
 				52F0369F1719B25F008CCB99 /* Page1Controller.m in Sources */,

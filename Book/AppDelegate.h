@@ -11,6 +11,7 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 {
     BOOL pageTurned;
+    NSUInteger bookmarkedPage;
 }
 
 @property (strong, nonatomic) UIWindow *window;
@@ -18,6 +19,10 @@
 - (void)setPageTurned:(BOOL)pageTurned;
 
 - (BOOL)getPageTurned;
+
+- (NSUInteger)getBookmarkedPage;
+
+- (void)setBookmarkedPage:(NSUInteger)page;
 
 
 @end

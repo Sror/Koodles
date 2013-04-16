@@ -10,8 +10,6 @@
 
 #import "ModelController.h"
 
-#import "DataViewController.h"
-
 #import "Title.h"
 #import "AppDelegate.h"
 
@@ -28,10 +26,12 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     // Configure the page view controller and add it as a child view controller.
+    AppDelegate* app = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    NSUInteger bookPage = [app getBookmarkedPage];
     self.pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
     self.pageViewController.delegate = self;
 
-    DataViewController *startingViewController = [self.modelController viewControllerAtIndex:0 storyboard:self.storyboard];
+    DataViewController *startingViewController = [self.modelController viewControllerAtIndex:bookPage storyboard:self.storyboard];
     NSArray *viewControllers = @[startingViewController];
     [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:NULL];
 
