@@ -43,6 +43,8 @@
 		524AB1AC171A452E00848C05 /* NibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 524AB1AA171A452C00848C05 /* NibViewController.m */; };
 		524AB1AD171A452E00848C05 /* NibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 524AB1AB171A452C00848C05 /* NibViewController.xib */; };
 		524AB1AF171B2E5200848C05 /* times.plist in Resources */ = {isa = PBXBuildFile; fileRef = 524AB1AE171B2E5100848C05 /* times.plist */; };
+		52659D35171DA1FB00FE361E /* icon72.png in Resources */ = {isa = PBXBuildFile; fileRef = 52659D34171DA1FB00FE361E /* icon72.png */; };
+		52659D37171DA20100FE361E /* icon144.png in Resources */ = {isa = PBXBuildFile; fileRef = 52659D36171DA20100FE361E /* icon144.png */; };
 		529B22D8170F9B1200B48AB5 /* storyby.png in Resources */ = {isa = PBXBuildFile; fileRef = 529B22D7170F9B1200B48AB5 /* storyby.png */; };
 		529B22DA170FA9AD00B48AB5 /* page2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 529B22D9170FA9AD00B48AB5 /* page2.jpg */; };
 		529B22DC170FAF0400B48AB5 /* page3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 529B22DB170FAF0400B48AB5 /* page3.jpg */; };
@@ -130,6 +132,8 @@
 		524AB1AA171A452C00848C05 /* NibViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NibViewController.m; path = ../NibViewController.m; sourceTree = "<group>"; };
 		524AB1AB171A452C00848C05 /* NibViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NibViewController.xib; path = ../NibViewController.xib; sourceTree = "<group>"; };
 		524AB1AE171B2E5100848C05 /* times.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = times.plist; sourceTree = "<group>"; };
+		52659D34171DA1FB00FE361E /* icon72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon72.png; path = ../icon72.png; sourceTree = "<group>"; };
+		52659D36171DA20100FE361E /* icon144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon144.png; path = ../icon144.png; sourceTree = "<group>"; };
 		529B22D7170F9B1200B48AB5 /* storyby.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = storyby.png; sourceTree = "<group>"; };
 		529B22D9170FA9AD00B48AB5 /* page2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = page2.jpg; sourceTree = "<group>"; };
 		529B22DB170FAF0400B48AB5 /* page3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = page3.jpg; sourceTree = "<group>"; };
@@ -299,6 +303,8 @@
 				520C19A1170F218600F0E452 /* InfoPlist.strings */,
 				520C19A4170F218600F0E452 /* main.m */,
 				520C19A6170F218600F0E452 /* Book-Prefix.pch */,
+				52659D36171DA20100FE361E /* icon144.png */,
+				52659D34171DA1FB00FE361E /* icon72.png */,
 				520C19AA170F218600F0E452 /* Default.png */,
 				520C19AC170F218600F0E452 /* Default@2x.png */,
 				520C19AE170F218700F0E452 /* Default-568h@2x.png */,
@@ -457,6 +463,8 @@
 				52AF26E4171BA7CC000EC024 /* titlename.png in Resources */,
 				52AF26E6171BB385000EC024 /* about2.png in Resources */,
 				52AF26EC171BC9B7000EC024 /* koodles.png in Resources */,
+				52659D35171DA1FB00FE361E /* icon72.png in Resources */,
+				52659D37171DA20100FE361E /* icon144.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 JRamos. All rights reserved.
 //
 
-#import <UIKit/UIKit.h> <
+#import <UIKit/UIKit.h>
 
 @interface Title : UIViewController <UIGestureRecognizerDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *koodles;
