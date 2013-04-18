@@ -6,7 +6,9 @@ iOS Interactive Children's Book App
 FEATURES
 __________
 • Read-to-me functionality
+
 • Highlight of words while reading them
+
 • Animations
 
 SCREENSHOTS
