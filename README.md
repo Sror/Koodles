@@ -14,8 +14,8 @@ __________
 SCREENSHOTS
 ____________
 
-![Alt text](boss.png "Screenshot 3")
+![Alt text](shot.png "Screenshot 3")
 
-![Alt text](boss.png "Screenshot 3")
+![Alt text](shot1.png "Screenshot 3")
 
-![Alt text](boss.png "Screenshot 3")
+![Alt text](shot2.png "Screenshot 3")
